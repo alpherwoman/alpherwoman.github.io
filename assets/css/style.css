@@ -249,7 +249,7 @@ Date Created: July 26, 2019
 
 /*--Custom Variables--*/
 :root {
-	--primary-font: 'Poppins', sans-serif;
+	--primary-font: 'hco gotham rounded ssm', sans-serif;
 	--secondary-font: 'Roboto', sans-serif;
 	--font-awesome: 'Font Awesome 5 Pro';
 	--primary-color: #FF2C54;
@@ -7246,7 +7246,7 @@ input[type="radio"]+label::after {
 }
 
 .axil-post-carousel .owl-item img {
-	height: calc(100vh - 10rem);
+	height: calc(100vh - 6rem);
 	-o-object-fit: cover;
 	object-fit: cover;
 }
