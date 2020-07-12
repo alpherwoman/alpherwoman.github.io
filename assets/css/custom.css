@@ -146,6 +146,19 @@ p {
     bottom: 0;
 }
 
+.axil-post-carousel .owl-item img {
+    height: auto;
+    max-height: calc(100vh - 10rem);
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+@media (max-width: 575px) {
+    .img-discount{
+        height: auto;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 990px) {
     .img-discount{
         min-height: 250px;
