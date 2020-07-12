@@ -254,15 +254,16 @@
 				_owlContainer.each(function () {
 
 					var _defaults = {
-						loop: true,
+						loop: false,
 						margin: 10,
-						responsiveClass: true,
+						responsiveClass: false,
 						items: 1,
 						autoplay: true,
 						nav: false,
 						dots: false,
 						animateIn: false,
-						animateOut: false
+						animateOut: false,
+						autoHeight:true
 					}
 					//vars
 					var _loop = $(this)[0].hasAttribute("data-owl-loop") ? $(this).data('owl-loop') : _defaults.loop,

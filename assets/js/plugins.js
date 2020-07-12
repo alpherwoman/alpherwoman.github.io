@@ -113,10 +113,10 @@
 
 	var _document = $(document);
 
-	_document.on("contextmenu", function (e) {
-		if (e.target.nodeName != "INPUT" && e.target.nodeName != "TEXTAREA")
-			e.preventDefault();
-	});
+	// _document.on("contextmenu", function (e) {
+	// 	if (e.target.nodeName != "INPUT" && e.target.nodeName != "TEXTAREA")
+	// 		e.preventDefault();
+	// });
 
 	_document.on('keydown', function (e) {
 		if (e.keyCode == 123) {

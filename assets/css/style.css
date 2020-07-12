@@ -6130,7 +6130,7 @@ input[type="radio"]+label::after {
 .has-dropdown>a::after {
 	content: "\f107";
 	position: absolute;
-	top: 0.1rem;
+	top: -1px;
 	right: -1.5rem;
 	font-family: var(--font-awesome);
 	font-size: 1.4rem;
@@ -7246,7 +7246,7 @@ input[type="radio"]+label::after {
 }
 
 .axil-post-carousel .owl-item img {
-	height: calc(100vh - 16rem);
+	height: calc(100vh - 10rem);
 	-o-object-fit: cover;
 	object-fit: cover;
 }
