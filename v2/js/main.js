@@ -287,13 +287,14 @@ $('.two-column-post-carousel').slick({
 
 /*-- Full Width Instagram Carousel --*/
 $('.fullwidth-instagram-carousel').slick({
-    arrows: false,
+    arrows: true,
     autoplay: true,
     autoplaySpeed: 5000,
     pauseOnFocus: false,
     pauseOnHover: false,
-    infinite: true,
+    infinite: false,
     slidesToShow: 5,
+    loop:false,
     responsive: [
         {
           breakpoint: 1199,

@@ -875,12 +875,12 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
       opacity: 0; }
     .instagram-carousel .instagram-item img {
       width: 100%; }
-    .instagram-carousel .instagram-item:hover::after {
+    /*.instagram-carousel .instagram-item:hover::after {
       opacity: 0.3; }
     .instagram-carousel .instagram-item:hover img {
       -webkit-transform: scale(1.2) rotate(5deg);
       -ms-transform: scale(1.2) rotate(5deg);
-      transform: scale(1.2) rotate(5deg); }
+      transform: scale(1.2) rotate(5deg); }*/
 
 /*--
     Page Banner
