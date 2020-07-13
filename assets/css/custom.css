@@ -196,12 +196,14 @@ p {
 
 .main-nav-toggler .toggler-inner{
     top: 0.7rem;
-    bottom: 0
+    bottom: 0;
+    left: 1rem
 }
 .main-nav-toggler{
     top: 0;
     bottom: 0;
     background: #009fe3;
+    left: 0
 }
 .or {
     position: relative;
@@ -273,6 +275,14 @@ p {
     display: none;
 }
 
+.main-navigation a:hover{
+    color: #009fe3;
+}
+
+.main-navigation a::before{
+    display: none;
+}
+
 /*.truncate-3 {
   position: relative;
   height: 3.6em;}
@@ -298,6 +308,9 @@ p {
 @media (max-width: 575px) {
     .img-discount, .img-article{
         height: auto;
+    }
+    .header-top-nav{
+        margin-left: 0!important;
     }
 }
 
