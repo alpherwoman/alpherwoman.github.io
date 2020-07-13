@@ -1,2 +1,0 @@
-# alpherwoman.github.io
- Alpherwoman

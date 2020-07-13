@@ -80,8 +80,13 @@ p {
 .font-16 {
     font-size: 16px!important;
 }
+
 .font-18 {
     font-size: 18px!important;
+}
+
+.font-20 {
+    font-size: 20px!important;
 }
 
 .font-25 {
@@ -218,6 +223,70 @@ p {
     padding: 0 10px;
     z-index: 10;
 }
+.form-control{
+    height: 40px!important;
+    border: 1px solid var(--grey-light-one)!important;
+}
+.gj-datepicker [role=right-icon] {
+    right: 0;
+    top: 0;
+    position: absolute;
+    /* width: 10px; */
+}
+.gj-datepicker-bootstrap [role=right-icon] button .gj-icon, .gj-datepicker-bootstrap [role=right-icon] button .material-icons {
+    position: absolute;
+    font-size: 21px;
+    top: 9px;
+    right: 0;
+}
+.gj-datepicker-bootstrap [role=right-icon] button{
+    display: none;
+}
+.single-input .nice-select{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.nice-select .option{
+    font-size: 14px
+}
+.post-cat, .btn{
+    border-radius: 5px;
+}
+.max-10{
+    max-width: 10rem!important
+}
+
+.truncate{
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.truncate-2{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.main-navigation a.d-logo::before{
+    display: none;
+}
+
+/*.truncate-3 {
+  position: relative;
+  height: 3.6em;}
+.truncate-3:after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 1.2em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+}*/
+
 @media (max-width: 1199px){
     .side-nav.opened {
         min-width: 320px;
@@ -227,7 +296,7 @@ p {
 }
 
 @media (max-width: 575px) {
-    .img-discount{
+    .img-discount, .img-article{
         height: auto;
     }
 }
