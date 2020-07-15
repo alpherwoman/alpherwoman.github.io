@@ -306,11 +306,11 @@ p {
 .main-navigation a{
     text-transform: uppercase;
     font-weight: 400;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .main-navigation li{
-    margin-right: 1.2rem
+    margin-right: 1rem
 }
 
 .main-navigation a.d-logo::before{
