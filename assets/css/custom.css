@@ -7,7 +7,8 @@ h4,
 h5,
 h6,
 p {
-    font-family: HCo Gotham Rounded SSm, sans-serif!important
+    font-family: 'Arial' sans-serif!important;
+    letter-spacing: 1px;
 }
 
 @font-face {
@@ -125,6 +126,20 @@ p {
     font-weight: 900;
 }
 
+.font-normal{
+    font-style: normal;
+}
+
+.single-blog-wrapper p{
+    font-family: hco gotham rounded ssm;
+    font-weight: 300;
+    letter-spacing: 0px;
+    font-size: 15px;
+}
+
+.jquery-comments *{
+    font-size: 15px
+}
 .btn-alpher{
 	background-color: #009fe3;
     border-color: #009fe3;
@@ -194,15 +209,20 @@ p {
     margin: 0px 2rem 0px 0;
 }
 
+.brand-logo{
+    max-width: 14rem;
+}
+
 .main-nav-toggler .toggler-inner{
     top: 0.7rem;
     bottom: 0;
-    left: 1rem
+    left: 1rem;
+    position: absolute;
 }
 .main-nav-toggler{
     top: 0;
     bottom: 0;
-    background: #009fe3;
+    background: #222;
     left: 0
 }
 .or {
@@ -259,7 +279,7 @@ p {
 }
 
 .truncate{
-    width: 250px;
+    /*width: 250px;*/
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -269,6 +289,28 @@ p {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+}
+
+.header-top li, .header-top .current-date{
+    text-transform: uppercase;
+}
+
+.bg-alpher {
+    background-color: #009fe3;
+}
+
+.header-top-nav a {
+    color: #fff;
+}
+
+.main-navigation a{
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.main-navigation li{
+    margin-right: 1.2rem
 }
 
 .main-navigation a.d-logo::before{
@@ -281,6 +323,22 @@ p {
 
 .main-navigation a::before{
     display: none;
+}
+
+.hover-line a{
+    background-image: none;
+}
+
+.media-body{
+    text-transform: uppercase;
+}
+
+.hover-line a:hover{
+    color: #3b91b7;
+}
+
+.border-bottom-dark {
+    border-bottom: 1px solid #151415!important;
 }
 
 /*.truncate-3 {
@@ -311,6 +369,9 @@ p {
     }
     .header-top-nav{
         margin-left: 0!important;
+    }
+    .brand-logo{
+        max-width: 13rem;
     }
 }
 
