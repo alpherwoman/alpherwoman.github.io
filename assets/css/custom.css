@@ -354,6 +354,12 @@ p {
   height: 1.2em;
   background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
 }*/
+.side-link{
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
 
 @media (max-width: 1199px){
     .side-nav.opened {
@@ -372,6 +378,9 @@ p {
     }
     .brand-logo{
         max-width: 13rem;
+    }
+    .side-link{
+        position: relative;
     }
 }
 
