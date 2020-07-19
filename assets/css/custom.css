@@ -422,6 +422,14 @@ p {
     font-size: 45px;
 }
 
+.lh-21{
+    line-height: 21px!important;
+}
+
+.bg-alpher{
+    background: var(--alpher-color)
+}
+
 /*.truncate-3 {
   position: relative;
   height: 3.6em;}
