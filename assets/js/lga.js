@@ -32,6 +32,7 @@
             $('.prof').hide();
         }
     })
+    $('.select').niceSelect();
     $('select#quest').niceSelect();
     $('select#quest1').niceSelect();
     $('select#quest2').niceSelect();

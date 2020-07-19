@@ -1,3 +1,5 @@
+@import url("nice.css");
+
 html,
 body,
 h1,
@@ -131,6 +133,13 @@ p {
 }
 
 .single-blog-wrapper p{
+    font-family: hco gotham rounded ssm;
+    font-weight: 300;
+    letter-spacing: 0px;
+    font-size: 15px;
+}
+
+.axil-about-us p, .axil-about-us h2{
     font-family: hco gotham rounded ssm;
     font-weight: 300;
     letter-spacing: 0px;
@@ -424,6 +433,10 @@ p {
 
 .lh-21{
     line-height: 21px!important;
+}
+
+.lh-30{
+    line-height: 30px!important;
 }
 
 .bg-alpher{
