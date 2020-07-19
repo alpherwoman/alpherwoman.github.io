@@ -22,8 +22,6 @@
 	<!-- Page Title
     	======================================== -->
 	<title>Home</title>
-	<!-- links for favicon
-    	======================================== -->
 	<!-- Icon fonts
     	======================================== -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700,700i,900" rel="stylesheet">
@@ -39,73 +37,12 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/vendor/magnific-popup.css">
 	<!-- Animate css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/vendor/animate.css">
-<style type="text/css">
-    html, body {
-      margin: 0;
-      padding: 0;
-    }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    .slider {
-        width: 100%;
-        margin: 0px auto;
-    }
-
-    .slick-slide {
-      margin: 0px 10px;
-    }
-
-    .slick-slide img {
-      width: 100%;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-      color: black;
-    }
-
-
-    .slick-slide {
-      transition: all ease-in-out .3s;
-      opacity: .2;
-      /*width: 30vw!important;*/
-    }
-    
-    .slick-active {
-      opacity: .5;
-    }
-
-    .slick-current {
-      opacity: 1;
-    }
-
-    .slick-next {
-	    right: 20%!important;
-	    top: 110%!important;
-	}
-
-	.slick-prev {
-	    left: 20%!important;
-	    top: 110%!important;
-	}
-
-	.slick-prev:before, .slick-next:before{
-		color: #000!important;
-	}
-	.slick-list{
-		padding-bottom: 100px!important;
-	}
-
-
-  </style>
 	<!-- Custom css -->
-  <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+  	<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+  	<link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 
 </head>
 
@@ -123,24 +60,29 @@
 				<div class="container px-0">
 					<div class="row align-items-center mx-auto">
 						<div class="col-md">
-							<ul class="header-top-nav list-inline justify-content-end" style="margin-left: -80px;">
-								<!-- <li class="current-date d-none d-md-flex" id="date"></li> -->
-								<li class="mr-2"><a href="#" class="">Log in</a></li>
-								<li class="pr-5 mr-5 border-right"><a href="#" class="">Sign Up</a></li>
+							<ul class="header-top-nav list-inline row" style="margin-left: -80px;">
+								<div class="col-4 col-sm-8 col-lg-7 d-flex justify-content-end px-0">
+									<li class="mr-2"><a href="#" class="d-none d-sm-flex">Gallery</a></li>
+									<li class="mr-2"><a href="#" class="d-none d-sm-flex">Events</a></li>
+								</div>
+								<div class="col-8 col-sm-4 col-lg-5 d-flex pl-0 justify-content-end align-items-center">
+									<li class="mr-2"><a href="#" class="">Login</a></li>
+									<li class="pr-lg-5 mr-lg-5 pr-3 mr-3 border-right"><a href="#" class="">SignUp</a></li>
 
-								<div class="navbar-extra-features">
-		                            <form action="#" class="navbar-search">
-		                                <div class="search-field">
-		                                    <input type="text" class="navbar-search-field" placeholder="Search Here...">
-		                                    <button class="navbar-search-btn" type="button"><i class="fal fa-search"></i></button>
-		                                </div>
-		                                <!-- End of .search-field -->
+									<div class="navbar-extra-features">
+			                            <form action="#" class="navbar-search">
+			                                <div class="search-field">
+			                                    <input type="text" class="navbar-search-field" placeholder="Search Here...">
+			                                    <button class="navbar-search-btn" type="button"><i class="fal fa-search"></i></button>
+			                                </div>
+			                                <!-- End of .search-field -->
 
-		                                <a href="#" class="navbar-search-close"><i class="fal fa-times"></i></a>
-		                            </form>
-		                            <!-- End of .navbar-search -->
-		                            <a href="#" class="nav-search-field-toggler mr-0" data-toggle="nav-search-feild"><i class="far fa-search"></i></a>
-		                        </div>
+			                                <a href="#" class="navbar-search-close"><i class="fal fa-times"></i></a>
+			                            </form>
+			                            <!-- End of .navbar-search -->
+			                            <a href="#" class="nav-search-field-toggler mr-0" data-toggle="nav-search-feild"><i class="far fa-search"></i></a>
+			                        </div>
+			                    </div>
 							</ul>
 							<!-- End of .header-top-nav -->
 						</div>
@@ -159,22 +101,28 @@
 							</a>
 						</div>
 						<!-- End of .brand-logo-container -->
-						<div class="main-nav-wrapper">
-							<ul class="main-navigation list-inline" id="main-menu">
-								<li><a href="" class="font-14">About</a></li>
-                                <li><a href="" class="font-14">Loans + Grants</a></li>
-                                <li><a href="" class="font-14">Health plans</a></li>
-								<li><a href="#" class="font-14">Learning</a></li>
-                                <li class=" d-none d-lg-flex mr-lg-5">
-									<div class="brand-logo-container">
-										<a class="d-logo" href="index.html">
-											<img src="assets/images/logo.png" alt="" class="brand-logo">
-										</a>
-									</div>
-								</li>
-                                <li class="mr-lg-5"><a href="" class="font-14">Savings + Investment</a></li>
-								<li class="mr-lg-5"><a href="#" class="font-14">Community</a></li>
-								<li class="mr-lg-5"><a href="#" class="font-14">Blog</a></li>
+						<div class="main-nav-wrapper container-fluid px-0 w-100">
+							<ul class="main-navigation list-inline row px-0" id="main-menu">
+								<div class="col-lg-5 d-lg-flex d-md-block p-0 justify-content-center">
+									<li><a href="" class="font-14">About</a></li>
+	                                <li style=""><a href="" class="font-14">Loans + Grants</a></li>
+	                                <li><a href="" class="font-14">Health plans</a></li>
+									<li><a href="#" class="font-14">Learning</a></li>
+								</div>
+								<div class="col-lg-2">
+	                                <li class=" d-none d-lg-flex mr-lg-5">
+										<div class="brand-logo-container">
+											<a class="d-logo" href="index.html">
+												<img src="assets/images/logo.png" alt="" class="brand-logo">
+											</a>
+										</div>
+									</li>
+								</div>
+								<div class="col-lg-5 d-lg-flex d-md-block p-0 justify-content-center">
+	                                <li class="mr-lg-5"><a href="" class="font-14">Savings + Investment</a></li>
+									<li class="mr-lg-5"><a href="#" class="font-14">Mentorship</a></li>
+									<li class="mr-lg-5"><a href="#" class="font-14">Blog</a></li>
+								</div>
 							</ul>
 							<!-- End of .main-navigation -->
 						</div>
@@ -196,187 +144,51 @@
 		<!-- End of .page-header -->
 
 		  <section class="center slider">
-		    <div>
-		      <a href="#">
-		      	<img src="https://alpherwoman.com/images/xg0uU51XcFvVeUpKdgVliFGq3ZfXEnWfOQm9Q95N.jpeg" style="max-height: 300px">
-		      </a>
-		      <div class="px-5 text-center position-absolute" style="top: 250px; display: block; width: 400px; background: #fff;">
-		      	<div><a href="#"><h6>Event</h6></a></div>
-		      	<div><a href="#"><h4 class="font-16 font-weight-500 font-italic">DIY: How to Build a Secure Business Website</h4></a></div>
-		      </div>
-		    </div>
-		    <div>
-		      <a href="#">
-		      	<img src="https://alpherwoman.com/images/DpMrjsrC3jwkv7fSFDxBfahKIo9d3yqVqUj0lJt2.png" style="max-height: 300px">
-		      </a>
-		      <div class="px-5 text-center position-absolute" style="top: 250px; display: block; width: 400px; background: #fff;">
-		      	<div><a href="#"><h6>Article</h6></a></div>
-		      	<div><a href="#"><h4 class="font-16 font-weight-500 font-italic">Free Online Classes to Help You Succeed in Your Career</h4></a></div>
-		      </div>
-		    </div>
-			<div>
+		    <div class="d-slide">
 		      <a href="#">
 		      	<img src="https://alpherwoman.com/images/slMAJ4CTFiRPwixuWClshf28P6mPV3XLwA2vFv3M.jpeg" style="max-height: 300px">
 		      </a>
-		      <div class="px-5 text-center position-absolute" style="top: 250px; display: block; width: 400px; background: #fff;">
-		      	<div><a href="#"><h6>Discount</h6></a></div>
-		      	<div><a href="#"><h4 class="font-16 font-weight-500 font-italic">Free Online Classes to Help You Succeed in Your Career</h4></a></div>
+		      <div class="p-3 text-center position-relative d-slide-text" style="">
+		      	<div><a href="#"><h6 class="text-uppercase">Event</h6></a></div>
+		      	<div><a href="#"><h4 class="font-20 font-weight-500 font-italic mb-2">DIY: How to Build a Secure Business Website</h4></a></div>
+		      	<div><a href="#" class="text-uppercase font-italic font-14"><h6 class="font-weight-400">Fri, 17th July</h6></a></div>
+
 		      </div>
 		    </div>
-		    <div>
+		    <div class="d-slide">
 		      <a href="#">
-		      	<img src="https://alpherwoman.com/images/0NI0tY1PaEw2JmqqAxlmEjU6XCrfPpxy0qtxuo5S.png" style="max-height: 300px">
+		      	<img src="https://alpherwoman.com/images/slMAJ4CTFiRPwixuWClshf28P6mPV3XLwA2vFv3M.jpeg" style="max-height: 300px">
 		      </a>
-		      <div class="px-5 text-center position-absolute" style="top: 250px; display: block; width: 400px; background: #fff;">
-		      	<div><a href="#"><h6>Course</h6></a></div>
-		      	<div><a href="#"><h4 class="font-16 font-weight-500 font-italic">Anyone can sell</h4></a></div>
+		      <div class="p-3 text-center position-relative d-slide-text" style="">
+		      	<div><a href="#"><h6 class="text-uppercase">Article</h6></a></div>
+		      	<div><a href="#"><h4 class="font-20 font-weight-500 font-italic mb-2">Free Online Classes to Help You Succeed in Your Career</h4></a></div>
+		      </div>
+		    </div>
+			<div class="d-slide">
+		      <a href="#">
+		      	<img src="https://alpherwoman.com/images/slMAJ4CTFiRPwixuWClshf28P6mPV3XLwA2vFv3M.jpeg" style="max-height: 300px">
+		      </a>
+		      <div class="p-3 text-center position-relative d-slide-text" style="">
+		      	<div><a href="#"><h6 class="text-uppercase">Discount</h6></a></div>
+		      	<div><a href="#"><h4 class="font-20 font-weight-500 font-italic mb-2">Free Online Classes to Help You Succeed in Your Career</h4></a></div>
+		      </div>
+		    </div>
+		    <div class="d-slide">
+		      <a href="#">
+		      	<img src="https://alpherwoman.com/images/slMAJ4CTFiRPwixuWClshf28P6mPV3XLwA2vFv3M.jpeg" style="max-height: 300px">
+		      </a>
+		      <div class="p-3 text-center position-relative d-slide-text" style="">
+		      	<div><a href="#"><h6 class="text-uppercase">Course</h6></a></div>
+		      	<div><a href="#"><h4 class="font-20 font-weight-500 font-italic mb-2">Anyone can sell</h4></a></div>
 		      </div>
 		    </div>
 		  </section>
 
-		<div class="recent-news-wrapper section-gap p-t-xs-15 p-t-sm-60">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-8">
-						<div class="axil-content owl-carousel axil-post-carousel" data-owl-items="1"
-							data-owl-loop="true" data-owl-autoplay="true" data-owl-dots="false" data-owl-nav="true"
-							data-owl-margin="0" data-owl-animate-in="fadeIn" data-owl-animate-out="fadeOut">
-							<div class="item">
-								<div class="axil-img-container video-container__type-2 m-b-xs-15 m-b-sm-30">
-									<a href="#" class="d-block">
-										<img src="https://alpherwoman.com/images/zDp0WZivQYNrYiU7DaQ4OYhklZ6LgF1faq15CD1t.jpeg" alt="video post"
-											class="img-responsive">
-									</a>
-								</div>
-								<!-- End of .axil-img-container -->
-							</div>
-							<!-- End of .item -->
-
-							<div class="item">
-								<div class="axil-img-container video-container__type-2 m-b-xs-15 m-b-sm-30">
-									<a href="#" class="d-block">
-										<img src="https://alpherwoman.com/images/CZFY9plm45eBchdjrUzcsk8o5XVsc3uXxgtB0ZWi.jpeg" alt="video post"
-											class="img-responsive">
-									</a>
-								</div>
-								<!-- End of .axil-img-container -->
-							</div>
-							<!-- End of .item -->
-
-							<div class="item">
-								<div class="axil-img-container video-container__type-2 m-b-xs-15 m-b-sm-30">
-									<a href="#" class="d-block">
-										<img src="https://alpherwoman.com/images/QJHkVN6XOlNregzz0DyEuZSOhNvtV7yMkmmX8NA5.jpeg" alt="video post"
-											class="img-responsive">
-									</a>
-								</div>
-								<!-- End of .axil-img-container -->
-							</div>
-							<!-- End of .item -->
-						</div>
-						<!-- End of .owl-carousel -->
-					</div>
-					<!-- End of .col-lg-6 -->
-					<div class="col-lg-4">
-						<div class="axil-recent-news">
-							<div class="section-title d-flex m-b-xs-30">
-								<h2 class="axil-title font-weight-500 font-20">New on the hub</h2>
-							</div>
-							<!-- End of .section-title -->
-							<div class="axil-content" style="height: calc(100vh - 35rem);overflow-y: scroll;">
-
-								<!-- End of .post-block -->
-								<div class="media post-block m-b-xs-30">
-									<a href="#" class="align-self-center"><img
-											class=" m-r-xs-30 max-10" src="https://alpherwoman.com/images/xg0uU51XcFvVeUpKdgVliFGq3ZfXEnWfOQm9Q95N.jpeg" alt=""></a>
-									<div class="media-body">
-										<div class="post-cat-group">
-											<a href="#"
-												class="post-cat cat-btn bg-color-red-two font-10">EVENTS</a>
-										</div>
-										<h3 class="axil-post-title hover-line hover-line font-16 font-weight-500 mb-0"><a id="trun" class="truncate-3 font-14" 
-												href="#">DIY: How to Build a Secure Business Website</a></h3>
-										<div class="post-metas">
-											<ul class="list-inline">
-												<li class="font-10">JULY 17, 2020</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-
-								<div class="media post-block m-b-xs-30">
-									<a href="#" class="align-self-center"><img
-											class=" m-r-xs-30 max-10" src="https://alpherwoman.com/images/DpMrjsrC3jwkv7fSFDxBfahKIo9d3yqVqUj0lJt2.png" alt=""></a>
-									<div class="media-body">
-										<div class="post-cat-group">
-											<a href="#"
-												class="post-cat cat-btn bg-color-purple-one font-10">ARTICLES</a>
-										</div>
-										<h3 class="axil-post-title hover-line hover-line font-16 font-weight-500 mb-0"><a id="trun" class="truncate-3 font-14" 
-												href="#">Free Online Classes to Help You Succeed in Your Career</a></h3>
-										<div class="post-metas">
-											<ul class="list-inline">
-												<li class="font-10">By ZAINAB MUILI</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<!-- End of .post-block -->
-								<div class="media post-block m-b-xs-30">
-									<a href="#" class="align-self-center"><img
-											class=" m-r-xs-30 max-10" src="https://alpherwoman.com/images/slMAJ4CTFiRPwixuWClshf28P6mPV3XLwA2vFv3M.jpeg" alt=""></a>
-									<div class="media-body">
-										<div class="post-cat-group">
-											<a href="#"
-												class="post-cat cat-btn bg-color-green-one font-10">LIFESTYLE DISCOUNT</a>
-										</div>
-										<h3 class="axil-post-title hover-line hover-line font-16 font-weight-500 mb-0"><a id="trun" class="truncate-3 font-14" 
-												href="#">Hotel Du Golf</a>
-										</h3>
-										<div class="post-metas">
-											<ul class="list-inline">
-												<li class="font-10">Hotel | Abuja</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<!-- End of .post-block -->
-								<!-- <div class="media post-block m-b-xs-30">
-									<a href="#" class="align-self-center"><img
-											class=" m-r-xs-30" src="https://alpherwoman.com/images/0NI0tY1PaEw2JmqqAxlmEjU6XCrfPpxy0qtxuo5S.png" alt=""></a>
-									<div class="media-body">
-										<div class="post-cat-group m-b-xs-10">
-											<a href="#"
-												class="post-cat cat-btn bg-color-blue-two">COURSES</a>
-										</div>
-										<h3 class="axil-post-title hover-line hover-line font-16 font-weight-500"><a
-												href="#">Anyone can sell</a></h3>
-										<div class="post-metas">
-											<ul class="list-inline">
-												<li>Financial Management</li>
-											</ul>
-										</div>
-									</div>
-								</div> -->
-								<!-- End of .post-block -->
-							</div>
-							<!-- End of .content -->
-						</div>
-						<!-- End of .recent-news -->
-					</div>
-					<!-- End of .col-lg-6 -->
-				</div>
-				<!-- End of .row -->
-			</div>
-			<!-- End of .container -->
-		</div>
-		<!-- End of .section-gap -->
-
 		<section class="related-post p-b-xs-30" style="background: #009fe3;">
 			<div class="container">
 				<div class="section-title py-5">
-					<h2 class="axil-title text-white">Lifestyle Discount</h2>
-					<a href="#" class="btn-link ml-auto text-white">View all</a>
+					<h2 class="axil-title text-white">Lifestyle Discounts</h2>
+					<a href="#" class="btn-link ml-auto text-white">All Discounts</a>
 				</div>
 				<!-- End of .section-title -->
 				<div class="grid-wrapper">
@@ -590,7 +402,7 @@
 
 							<div class="media post-block post-block__mid m-b-xs-30">
 								<a href="post-format-standard.html" class="align-self-center"><img class=" m-r-xs-30"
-										src="https://alpherwoman.com/images/VUOa3Is3dqPqQX15B9L8yyV4aRTjomk0YicadzJr.png" alt=""></a>
+										src="https://alpherwoman.com/images/DpMrjsrC3jwkv7fSFDxBfahKIo9d3yqVqUj0lJt2.png" alt=""></a>
 								<div class="media-body position-relative h-100">
 									<div class="post-cat-group m-b-xs-10">
 										<a href="business.html" class="post-cat cat-btn bg-color-blue-one">Category</a>
@@ -613,114 +425,12 @@
 					</div>
 					<!-- End of .col-lg-8 -->
 					<div class="col-lg-4">
-						<aside class="post-sidebar p-0">
-							<div class="newsletter-widget weekly-newsletter bg-grey-light-three py-lg-3">
+						<aside class="post-sidebar p-0 mt-lg-5 pt-lg-5">
 							<div class="category-widget m-b-xs-40">
-								<div class="widget-title">
-									<h3>About</h3>
-									<div class="owl-nav">
-									</div>
-								</div>
-								<div class="category-carousel">
-									<video id="my-video" class="video-js vjs-default-skin vjs-big-play-centered"
-                                           liveui="true" controls width="100%" height="230"
-                                           poster="https://alpherwoman.com/site/images/video.png" data-setup="{}">
-                                        <source src="https://alpherwoman.com/site/video/video.mp4" type="video/mp4" />
-                                        <p class="vjs-no-js">
-                                            To view this video please enable JavaScript, and consider upgrading to a web browser that
-                                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a
-                                            >
-                                        </p>
-                                    </video>
-								</div>
+								<img src="https://alpherwoman.com/images/xg0uU51XcFvVeUpKdgVliFGq3ZfXEnWfOQm9Q95N.jpeg" class="w-100">
 								<!-- End of .category-carousel -->
 							</div>
 							<!-- End of .category-widget -->
-							<div class="post-widget sidebar-post-widget m-b-xs-40">
-								<ul class="nav nav-pills row no-gutters">
-									<li class="nav-item col">
-										<a class="nav-link active" data-toggle="pill" href="#recent-post">Events</a>
-									</li>
-								</ul>
-								<div class="tab-content">
-									<div class="tab-pane fade show active" id="recent-post">
-										<div class="axil-content">
-											<div class="media post-block post-block__small">
-												<a href="#" class="align-self-center"><img
-														class=" m-r-xs-30" src="https://alpherwoman.com/images/xg0uU51XcFvVeUpKdgVliFGq3ZfXEnWfOQm9Q95N.jpeg"
-														alt="media image"></a>
-												<div class="media-body">
-													<div class="post-cat-group">
-														<a href="#"
-															class="post-cat color-red-one">NEW</a>
-													</div>
-													<h4 class="axil-post-title hover-line hover-line"><a
-															href="#">DIY: How to Build a Secure Business Website</a></h4>
-													<div class="post-metas">
-														<ul class="list-inline">
-															<li>Jul 17, 2020</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<!-- End of .post-block -->
-											<div class="media post-block post-block__small">
-												<a href="#" class="align-self-center"><img
-														class=" m-r-xs-30" src="https://alpherwoman.com/images/TrZoDvE9Tr3bgc20vYMGb0ZIehekFdrllF3r69NL.jpeg"
-														alt="media image"></a>
-												<div class="media-body">
-													<div class="post-cat-group">
-														<a href="#"
-															class="post-cat color-red-one">NEW</a>
-													</div>
-													<h4 class="axil-post-title hover-line hover-line"><a
-															href="#">TGIF with alpher: Cocktail Making & Mindful Body Movement</a></h4>
-													<div class="post-metas">
-														<ul class="list-inline">
-															<li>JuN 26, 2020</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<!-- End of .post-block -->
-											<div class="media post-block post-block__small">
-												<a href="#" class="align-self-center"><img
-														class=" m-r-xs-30" src="https://alpherwoman.com/images/635PVwCHE8UZSCWzcdroo533mZCzN1cAzpCayhli.jpeg"
-														alt="media image"></a>
-												<div class="media-body">
-													<h4 class="axil-post-title hover-line hover-line"><a
-															href="#">TGIF with alpher</a></h4>
-													<div class="post-metas">
-														<ul class="list-inline">
-															<li>May 29, 2020</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<!-- End of .post-block -->
-											<div class="media post-block post-block__small">
-												<a href="#" class="align-self-center"><img
-														class=" m-r-xs-30" src="https://alpherwoman.com/images/xg0uU51XcFvVeUpKdgVliFGq3ZfXEnWfOQm9Q95N.jpeg"
-														alt="media image"></a>
-												<div class="media-body">
-													<h4 class="axil-post-title hover-line hover-line"><a
-															href="#">DIY: How to Build a Secure Business Website</a></h4>
-													<div class="post-metas">
-														<ul class="list-inline">
-															<li>Jul 17, 2020</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<!-- End of .post-block -->
-										</div>
-										<!-- End of .content -->
-									</div>
-									<!-- End of .tab-pane -->
-								</div>
-								<!-- End of .tab-content -->
-							</div>
-							<!-- End of .sidebar-post-widget -->
 						</aside>
 						<!-- End of .post-sidebar -->
 					</div>
@@ -1084,10 +794,26 @@
     $(document).on('ready', function() {
       $(".center").slick({
         dots: true,
+        autoplay: true,
         infinite: true,
         centerMode: true,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+		    {
+		      breakpoint: 1024,
+		      settings: {
+		        slidesToShow: 3,
+		      }
+		    },
+		    {
+		      breakpoint: 767,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+	    ]
       });
   });
 	</script>

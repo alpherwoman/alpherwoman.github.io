@@ -70,6 +70,7 @@ Date Created: July 26, 2019
 	--font-awesome: 'Font Awesome 5 Pro';
 	--primary-color: #FF2C54;
 	--secondary-color: #FF9500;
+	--alpher-color: #009fe3;
 	--action-color: #FECC00;
 	--grey-dark-key: #000;
 	--grey-dark-one: #121213;
@@ -6486,7 +6487,7 @@ input[type="radio"]+label::after {
 .breadcrumb a.active,
 .breadcrumb li:hover,
 .breadcrumb a:hover {
-	color: var(--primary-color);
+	color: var(--alpher-color);
 }
 
 .breadcrumb-item+.breadcrumb-item {
@@ -7225,7 +7226,7 @@ input[type="radio"]+label::after {
 /*--Banner--*/
 .banner {
 	position: relative;
-	background-color: var(--grey-light-three);
+	background-color: var(--grey-light-one);
 }
 
 .banner .grad-overlay {
