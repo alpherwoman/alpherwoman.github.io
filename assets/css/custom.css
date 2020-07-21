@@ -481,6 +481,14 @@ p {
     color: #fff;
 }
 
+.bg-banner{
+    background: url(../images/banner.png);
+}
+
+.nice-select{
+    line-height: 3rem;
+}
+
 @media (max-width: 1199px){
     .side-nav.opened {
         min-width: 320px;
