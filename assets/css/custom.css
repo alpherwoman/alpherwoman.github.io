@@ -464,7 +464,8 @@ p {
 }
 
 .navbar-search.show-nav-search{
-    left: -5vw;
+    /*left: -5vw;*/
+    left: -12vw;
 }
 
 .articles .post-comments {
@@ -517,7 +518,8 @@ p {
         margin: -30px auto 0;
     }
     .navbar-search.show-nav-search{
-        left: 14.3vw;
+        /*left: 14.3vw;*/
+        left: -23.7vw;
     }
     .articles .post-comments{
         position: relative;
@@ -528,7 +530,8 @@ p {
         width: 75vw;
     }
     .navbar-search.show-nav-search{
-        left: -9.1vw
+        /*left: -9.1vw*/
+        left: -15.1vw
     }
     .articles .post-comments{
         position: relative;
