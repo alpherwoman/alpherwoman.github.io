@@ -41,3 +41,15 @@ $(document).scroll(function() {
     $('.fixed-top').removeClass('top-0');
   }
 });
+$("#phone").intlTelInput({
+    defaultCountry: "auto",
+    geoIpLookup: function(callback) {
+        $.get('http://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+            var countryCode = (resp && resp.country) ? resp.country : "";
+            callback(countryCode);
+        });
+    },
+    nationalMode: false,
+    // preferredCountries: ['ng'],
+    utilsScript: "assets/js/utils.js"
+});

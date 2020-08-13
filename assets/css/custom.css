@@ -644,7 +644,7 @@ p {
     padding: .2em 0;
     width: 95%;
     display: block;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ccc!important;
 }
 
 .menu>ul>li>ul>li a:hover {
@@ -738,6 +738,14 @@ p {
 .border-bottom {
     border-bottom: 1px solid #777!important;
     padding: 2px 0 4px 0;
+}
+
+#datepicker{
+    font-size: 14px;
+    padding: 0px 22px;
+}
+.form-group.focused input, .form-group.focused textarea{
+    border: 0.2rem solid var(--grey-light-one)
 }
 
 @media (max-width: 1199px){
