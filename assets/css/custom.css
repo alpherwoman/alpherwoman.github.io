@@ -484,7 +484,11 @@ p {
 }
 
 .bg-banner{
-    background: url(../images/banner.png);
+    /*background: url(../images/banner.png);*/
+    background: #bcbdc0;
+    text-align: center;
+    color: #fff;
+    padding: 4rem;
 }
 
 .nice-select{
@@ -493,6 +497,8 @@ p {
 
 .header-top li, .header-top .current-date{
     color: #fff;
+    font-weight: 600;
+    font-size: 12px;
 }
 
 .navbar{
@@ -591,8 +597,8 @@ p {
     padding: 1.5em;
     display: block;
     color: #000;
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 12px;
     text-transform: uppercase;
 }
 
@@ -601,10 +607,10 @@ p {
 }
 
 .menu>ul>li>ul {
-    border-top: 2px solid #009fe3;
+    border-top: 2px solid #009fdf;
     display: none;
     width: 80%;
-    background: #f0f0f0;
+    background: #009fdf;
     padding: 20px;
     position: absolute;
     z-index: 99;
@@ -634,7 +640,7 @@ p {
 }
 
 .menu>ul>li>ul>li a {
-    color: #777;
+    color: #fff;
     padding: .2em 0;
     width: 95%;
     display: block;
@@ -642,7 +648,7 @@ p {
 }
 
 .menu>ul>li>ul>li a:hover {
-    color: #03a9f4;
+    color: #bcbdc0;
 }
 
 .menu>ul>li>ul>li>ul {
@@ -673,7 +679,7 @@ p {
 
 .menu>ul>li>ul>li>ul>li a {
     border: 0;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .menu>ul>li>ul.normal-sub {
@@ -689,6 +695,10 @@ p {
 .menu>ul>li>ul.normal-sub>li a {
     border: 0;
     padding: 1em 0;
+}
+
+.menu-dropdown-icon .font-16.my-2{
+    font-size: 12px!important
 }
 
 .d-menu {
@@ -719,6 +729,15 @@ p {
 
 .bottom-40{
     bottom: 10%
+}
+
+.rtopVideoPlayerWrapper .rtopVideoPlayer .rtopVideoHolder{
+    padding-bottom: 42%;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #777!important;
+    padding: 2px 0 4px 0;
 }
 
 @media (max-width: 1199px){
