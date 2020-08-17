@@ -43,13 +43,13 @@ $(document).scroll(function() {
 });
 $("#phone").intlTelInput({
     defaultCountry: "auto",
-    geoIpLookup: function(callback) {
-        $.get('http://ipinfo.io', function() {}, "jsonp").always(function(resp) {
-            var countryCode = (resp && resp.country) ? resp.country : "";
-            callback(countryCode);
-        });
-    },
+    // geoIpLookup: function(callback) {
+    //     $.get('http://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+    //         var countryCode = (resp && resp.country) ? resp.country : "";
+    //         callback(countryCode);
+    //     });
+    // },
     nationalMode: false,
-    // preferredCountries: ['ng'],
+    preferredCountries: ['ng'],
     utilsScript: "assets/js/utils.js"
 });

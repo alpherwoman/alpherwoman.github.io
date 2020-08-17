@@ -493,7 +493,15 @@ p {
 
 .bg-banner{
     /*background: url(../images/banner.png);*/
-    background: #bcbdc0;
+    background: #009fe3;
+    text-align: center;
+    color: #fff;
+    padding: 4rem;
+}
+
+.bg-article{
+    /*background: url(../images/banner.png);*/
+    background: #009fe3;
     text-align: center;
     color: #fff;
     padding: 4rem;
