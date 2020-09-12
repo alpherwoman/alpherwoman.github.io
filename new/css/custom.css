@@ -151,8 +151,28 @@ p {
   background: #f5f5f5!important
 }
 
+.bg-alpher{
+  background: #009fe3!important
+}
+
+.bg-pink{
+  background: #e91e63!important
+}
+
 .border-bottom{
   border-bottom: 2px solid #ccc;
+}
+
+.text-dark .event-date h1{
+  border: 3px solid #000;
+}
+
+.text-white .event-date h1{
+  border: 3px solid #fff;
+}
+
+.text-white .event-detail h5, .text-white .event-detail p, .text-white .event-detail a, .text-white .event-date h1{
+  color: #fff;
 }
 
 #myVideo {
