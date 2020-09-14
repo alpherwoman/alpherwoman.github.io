@@ -740,6 +740,40 @@ a.a-link:hover{
   font-size: 16px;
 }
 
+.fill{
+  height: 45px
+}
+
+.gj-datepicker-md, .gj-dropdown-md [role=presenter] {
+    font-family: inherit;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+  line-height: 45px;
+  padding-left: 12px;
+}
+
+.select2-container .select2-selection--single{
+  height: 45px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+  top: 8px;
+  right: 8px;
+}
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid #ced4da;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.cursor-auto{
+  cursor: auto;
+}
+
 @-webkit-keyframes ripple {
     70% {box-shadow: 0 0 0 70px rgba(255, 255, 255, 0);}
     100% {box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);}
@@ -752,6 +786,15 @@ a.a-link:hover{
 .header.header-transparent.nav-border{
   padding: 0
 }
+@media (min-width: 992px) and (max-width: 1212px){
+.header.header-transparent ul.navbar-nav > li > a{
+  line-height: 30px;
+}
+
+@media (min-width: 992px){
+  .login{padding-top: calc(100vh - 35em)!important}
+}
+
 @media (max-width: 576px){
   .owl-carousel.other .owl-stage-outer{
      max-height: 60vh!important;
