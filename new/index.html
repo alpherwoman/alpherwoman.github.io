@@ -39,6 +39,10 @@
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/intlTelInput.css">
+
     <!-- Custom styles-->
     <link rel="stylesheet" href="css/custom.css">
 
@@ -110,7 +114,7 @@
                                 </ul>
                              </li>
                              <li class="header-ticket nav-item">
-                                <a class="ticket-btn btn" href="register.html"> Get Started
+                                <a class="ticket-btn btn" href="#" data-toggle="modal" data-target="#exampleModal"> Get Started
                                 </a>
                              </li>
                           </ul>
@@ -123,7 +127,7 @@
 
         <!-- banner start-->
         <section class="main-slider owl-carousel content">
-            <div class="banner-item overlay" style="max-height: 715px; background: url(images/home-banner.png);background-position-y: center ">
+            <div class="banner-item overlay" style="max-height: 715px; background: url(images/alpher-hero-banner.png);background-position: center ">
                 <!-- <div class="over"></div> -->
 
                 <!-- <video autoplay muted loop id="myVideo" style="width: 100%">
@@ -136,7 +140,7 @@
                             <div class="banner-content-wrap text-center px-3" style="z-index: 33">
                                 <h1 class="banner-title text-alpher" style="text-transform: none;">Welcome to the alpher Hub</h1>
 
-                                <p class="banner-desc py-4 px-0 fw-400 font-20">
+                                <p class="banner-desc py-4 px-0 fw-400 font-24">
                                     Your one stop portal for learning and networking with other women
                                 </p>
                                 <!-- Countdown end -->
@@ -163,7 +167,7 @@
         <section class="ts-intro-outcome py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 mx-auto">
+                    <div class="col-lg-12 mx-auto">
                         <h1 class="text-center font-weight-400">
                             What we have for you & lots more
                         </h1>
@@ -173,83 +177,8 @@
             <div class="courses slider">
                 <div>
                     <div class="post">
-                        <div class="post-media post-image">
-                            <a href="index-5.html#"><img src="images/event_website.jpg" class="img-fluid" alt=""></a>
-                        </div>
-
-                        <div class="post-body">
-                            <div class="entry-header">
-                                <h4 class="text-dark text-uppercase">Event</h4>
-                            </div>
-                            <!-- header end -->
-
-                            <a href="event-detail.html" class="entry-content minh-60 a-link text-dark">
-                                DIY: How to Build a Secure Business Website
-                            </a>
-
-                            <div class="post-footer">
-                                <a href="event-detail.html" class="btn-link text-uppercase font-12 text-alpher">Learn More <i class="icon icon-arrow-right"></i></a>
-                            </div>
-
-                        </div>
-                        <!-- post-body end -->
-                    </div>
-                    <!-- post end-->
-                </div>
-                <div>
-                    <div class="post">
-                        <div class="post-media post-image">
-                            <a href="index-5.html#"><img src="images/article_online.jpeg" class="img-fluid" alt=""></a>
-                        </div>
-
-                        <div class="post-body">
-                            <div class="entry-header">
-                                <h4 class="text-dark text-uppercase">Article</h4>
-                            </div>
-                            <!-- header end -->
-
-                            <a href="article-detail.html" class="entry-content minh-60 a-link text-dark">
-                                Free Online Classes to Help You Succeed in Your Career
-                            </a>
-
-                            <div class="post-footer">
-                                <a href="article-detail.html" class="btn-link text-uppercase font-12 text-alpher">Learn More <i class="icon icon-arrow-right"></i></a>
-                            </div>
-
-                        </div>
-                        <!-- post-body end -->
-                    </div>
-                    <!-- post end-->
-                </div>
-                <div>
-                    <div class="post">
-                        <div class="post-media post-image">
-                            <a href="index-5.html#"><img src="images/inlaks.jpeg" class="img-fluid" alt=""></a>
-                        </div>
-
-                        <div class="post-body">
-                            <div class="entry-header">
-                                <h4 class="text-dark text-uppercase">Discount</h4>
-                            </div>
-                            <!-- header end -->
-
-                            <a href="discount-detail.html" class="entry-content minh-60 a-link text-dark">
-                                Inlaks Energy Limited
-                            </a>
-
-                            <div class="post-footer">
-                                <a href="discount-detail.html" class="btn-link font-12 text-uppercase text-alpher">Learn More <i class="icon icon-arrow-right"></i></a>
-                            </div>
-
-                        </div>
-                        <!-- post-body end -->
-                    </div>
-                    <!-- post end-->
-                </div>
-                <div>
-                    <div class="post">
-                        <div class="post-media post-image">
-                            <a href="index-5.html#"><img src="images/course_sell.jpg" class="img-fluid" alt=""></a>
+                        <div class="post-media post-image-1">
+                            <a href="index-5.html#"><img src="images/course-index.png" class="img-fluid" alt=""></a>
                         </div>
 
                         <div class="post-body">
@@ -258,12 +187,88 @@
                             </div>
                             <!-- header end -->
 
-                            <a href="course-detail.html" class="entry-content minh-60 a-link text-dark">
-                                Anyone can sell
-                            </a>
+                            <div class="entry-content minh-60 a-link text-gray font-16 font-weight-300">
+                                Are you an Entrepreneur? Business, plans and models.
+                            </div>
 
-                            <div class="post-footer">
-                                <a href="course-detail.html" class="btn-link text-uppercase font-12 text-alpher">Learn More <i class="icon icon-arrow-right"></i></a>
+                            <div class="post-footer mt-3">
+                                <a href="course-detail.html" class="btn-link text-uppercase font-14 text-alpher">Learn More <i class="icon icon-arrow-right"></i></a>
+                            </div>
+
+                        </div>
+                        <!-- post-body end -->
+                    </div>
+                    <!-- post end-->
+                </div>
+
+                <div>
+                    <div class="post">
+                        <div class="post-media post-image-1">
+                            <a href="index-5.html#"><img src="images/event-index.png" class="img-fluid" alt=""></a>
+                        </div>
+
+                        <div class="post-body">
+                            <div class="entry-header">
+                                <h4 class="text-dark text-uppercase">Event</h4>
+                            </div>
+                            <!-- header end -->
+
+                            <div class="entry-content minh-60 a-link text-gray font-16 font-weight-300">
+                                DIY: How to Build a Secure Business Website
+                            </div>
+
+                            <div class="post-footer mt-3">
+                                <a href="event-detail.html" class="btn-link text-uppercase font-14 text-alpher">Learn More <i class="icon icon-arrow-right"></i></a>
+                            </div>
+
+                        </div>
+                        <!-- post-body end -->
+                    </div>
+                    <!-- post end-->
+                </div>
+                <div>
+                    <div class="post">
+                        <div class="post-media post-image-1">
+                            <a href="index-5.html#"><img src="images/discount-index.png" class="img-fluid" alt=""></a>
+                        </div>
+
+                        <div class="post-body">
+                            <div class="entry-header">
+                                <h4 class="text-dark text-uppercase">Discount</h4>
+                            </div>
+                            <!-- header end -->
+
+                            <div class="entry-content minh-60 a-link text-gray font-16 font-weight-300">
+                                Inlaks Energy Limited
+                            </div>
+
+                            <div class="post-footer mt-3">
+                                <a href="discount-detail.html" class="btn-link font-14 text-uppercase text-alpher">Learn More <i class="icon icon-arrow-right"></i></a>
+                            </div>
+
+                        </div>
+                        <!-- post-body end -->
+                    </div>
+                    <!-- post end-->
+                </div>                
+                <div>
+                    <div class="post">
+                        <div class="post-media post-image-1">
+                            <a href="index-5.html#"><img src="images/event-index.png" class="img-fluid" alt=""></a>
+                        </div>
+
+                        <div class="post-body">
+                            <div class="entry-header">
+                                <h4 class="text-dark text-uppercase">Article</h4>
+                            </div>
+                            <!-- header end -->
+
+                            <div class="entry-content minh-60 a-link text-gray font-16 font-weight-300">
+                                Free Online Classes to Help You Succeed in Your Career
+                            </div>
+
+                            <div class="post-footer mt-3">
+                                <a href="article-detail.html" class="btn-link text-uppercase font-14 text-alpher">Learn More <i class="icon icon-arrow-right"></i></a>
                             </div>
 
                         </div>
@@ -277,7 +282,7 @@
         <section class="ts-intro-outcome py-5 bg-dark">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 mx-auto">
+                    <div class="col-lg-12 mx-auto">
                         <h1 class="text-center font-weight-400 text-alpher">
                             Discounts you'll love
                         </h1>
@@ -286,20 +291,21 @@
             </div>
             <div class="discounts slider">
                 <div>
-                    <div class="post">
-                        <div class="post-media post-image-1">
-                            <a href="index-5.html#"><img src="images/inlaks.jpeg" class="img-fluid" alt=""></a>
+                    <div class="card border-0">
+                        <div class="post-media post-image-1 p-4 discount-card-1 text-white">
+                            <div class="text-uppercase font-16 mb-3">Up to</div>
+                            <div class="text-uppercase font-60 discount-percent">20%<br>OFF</div>
                         </div>
 
-                        <div class="post-body">
-                            <div class="entry-header minh-65">
+                        <div class="card-body">
+                            <div class="entry-header minh-50">
                                 <h4 class="">
-                                    <a href="discount-detail.html" class="text-dark font-14 text-uppercase">Inlaks Energy Limited</a>
+                                    <a href="discount-detail.html" class="text-dark font-14 text-uppercase">Inlaks Energy</a>
                                 </h4>
                             </div>
                             <!-- header end -->
 
-                            <div class="post-footer">
+                            <div class="card-footer bg-white p-0 border-0">
                                 <a href="discount-detail.html" class="btn-link text-uppercase font-12 text-alpher">Learn More <i class="icon icon-arrow-right"></i></a>
                             </div>
 
@@ -308,21 +314,23 @@
                     </div>
                     <!-- post end-->
                 </div>
+
                 <div>
-                    <div class="post">
-                        <div class="post-media post-image-1">
-                            <a href="index-5.html#"><img src="images/oriki.jpeg" class="img-fluid" alt=""></a>
+                    <div class="card border-0">
+                        <div class="post-media post-image-1 p-4 discount-card-2 text-white">
+                            <div class="text-uppercase font-16 mb-3">Up to</div>
+                            <div class="text-uppercase font-60 discount-percent">15%<br>OFF</div>
                         </div>
 
-                        <div class="post-body">
-                            <div class="entry-header minh-65">
+                        <div class="card-body">
+                            <div class="entry-header minh-50">
                                 <h4 class="">
-                                    <a href="discount-detail.html" class="text-dark font-14 text-uppercase">The ORÍKÌ Spa</a>
+                                    <a href="discount-detail.html" class="text-dark font-14 text-uppercase">The oriki spa</a>
                                 </h4>
                             </div>
                             <!-- header end -->
 
-                            <div class="post-footer">
+                            <div class="card-footer bg-white p-0 border-0">
                                 <a href="discount-detail.html" class="btn-link text-uppercase font-12 text-alpher">Learn More <i class="icon icon-arrow-right"></i></a>
                             </div>
 
@@ -331,21 +339,23 @@
                     </div>
                     <!-- post end-->
                 </div>
+
                 <div>
-                    <div class="post">
-                        <div class="post-media post-image-1">
-                            <a href="index-5.html#"><img src="images/hypogia.png" class="img-fluid" alt=""></a>
+                    <div class="card border-0">
+                        <div class="post-media post-image-1 p-4 discount-card-3 text-white">
+                            <div class="text-uppercase font-16 mb-3">Up to</div>
+                            <div class="text-uppercase font-60 discount-percent">30%<br>OFF</div>
                         </div>
 
-                        <div class="post-body">
-                            <div class="entry-header minh-65">
+                        <div class="card-body">
+                            <div class="entry-header minh-50">
                                 <h4 class="">
-                                    <a href="discount-detail.html" class="text-dark font-14 text-uppercase">Hygeia HMO</a>
+                                    <a href="discount-detail.html" class="text-dark font-14 text-uppercase">Hygeia hmo</a>
                                 </h4>
                             </div>
                             <!-- header end -->
 
-                            <div class="post-footer">
+                            <div class="card-footer bg-white p-0 border-0">
                                 <a href="discount-detail.html" class="btn-link text-uppercase font-12 text-alpher">Learn More <i class="icon icon-arrow-right"></i></a>
                             </div>
 
@@ -354,21 +364,23 @@
                     </div>
                     <!-- post end-->
                 </div>
+
                 <div>
-                    <div class="post">
-                        <div class="post-media post-image-1">
-                            <a href="index-5.html#"><img src="images/suno.jpeg" class="img-fluid" alt=""></a>
+                    <div class="card border-0">
+                        <div class="post-media post-image-1 p-4 discount-card-4 text-white">
+                            <div class="text-uppercase font-16 mb-3">Up to</div>
+                            <div class="text-uppercase font-60 discount-percent">40%<br>OFF</div>
                         </div>
 
-                        <div class="post-body">
-                            <div class="entry-header minh-65">
+                        <div class="card-body">
+                            <div class="entry-header minh-50">
                                 <h4 class="">
-                                    <a href="discount-detail.html" class="text-dark font-14 text-uppercase">Sunu HMO</a>
+                                    <a href="discount-detail.html" class="text-dark font-14 text-uppercase">Sunu hmo Sunu hmo Sunu hmo</a>
                                 </h4>
                             </div>
                             <!-- header end -->
 
-                            <div class="post-footer">
+                            <div class="card-footer bg-white p-0 border-0">
                                 <a href="discount-detail.html" class="btn-link text-uppercase font-12 text-alpher">Learn More <i class="icon icon-arrow-right"></i></a>
                             </div>
 
@@ -377,21 +389,23 @@
                     </div>
                     <!-- post end-->
                 </div>
+
                 <div>
-                    <div class="post">
-                        <div class="post-media post-image-1">
-                            <a href="index-5.html#"><img src="images/hypogia.png" class="img-fluid" alt=""></a>
+                    <div class="card border-0">
+                        <div class="post-media post-image-1 p-4 discount-card-2 text-white">
+                            <div class="text-uppercase font-16 mb-3">Up to</div>
+                            <div class="text-uppercase font-60 discount-percent">60%<br>OFF</div>
                         </div>
 
-                        <div class="post-body">
-                            <div class="entry-header minh-65">
+                        <div class="card-body">
+                            <div class="entry-header minh-50">
                                 <h4 class="">
-                                    <a href="discount-detail.html" class="text-dark font-14 text-uppercase">Hygeia HMO</a>
+                                    <a href="discount-detail.html" class="text-dark font-14 text-uppercase">Fonatna</a>
                                 </h4>
                             </div>
                             <!-- header end -->
 
-                            <div class="post-footer">
+                            <div class="card-footer bg-white p-0 border-0">
                                 <a href="discount-detail.html" class="btn-link text-uppercase font-12 text-alpher">Learn More <i class="icon icon-arrow-right"></i></a>
                             </div>
 
@@ -402,7 +416,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <a class="btn btn-alpher text-uppercase font-14" href="discounts.html"> Enjoy all discounts</a>
+                <a class="btn btn-alpher text-uppercase font-12" href="discounts.html"> Enjoy all discounts</a>
             </div>
         </section>
 
@@ -421,21 +435,21 @@
                     <div class="col-sm-12 text-center mx-auto py-3">    
                         <div class="card mb-3 border-0">
                             <div class="row no-gutters">
-                                <div class="col-sm-6 col-md-5">
+                                <div class="col-sm-6">
                                     <div class="new">NEW</div>
-                                    <img src="images/course_entre_small.jpg" class="card-img" alt="Tobi Obasa" style="object-fit: cover;height: 100%">
+                                    <img src="images/alpher-course.png" class="card-img" alt="Tobi Obasa">
                                 </div>
-                                <div class="col-sm-6 col-md-7 p-0 p-md-4">
+                                <div class="col-sm-6 p-0 p-md-4">
                                     <div class="card-body text-left">
                                         <p class="card-text d-flex">
-                                            <small class="text-alpher font-14 text-uppercase">Business </small>
+                                            <small class="text-alpher font-14 text-uppercase my-0">Business </small>
                                         </p>
                                         <a href="course-detail.html"><h5 class="card-title font-25">Anyone can sell</h5></a>
                                         <p class="card-text">
-                                            <small class="text-muted font-14 text-uppercase"> By Omalola James </small>
+                                            <small class="text-muted font-14 text-uppercase"> BY OMOLARA OYINKANSOLA </small>
                                         </p>
-                                        <p class="card-text font-16 text-dark d-none d-md-block">Staying relevant in a business requires being innovative and moving from the traditional methods of brand promotion and sales, into the world of digital marketing and e-commerce.</p>
-                                        <a href="course-detail.html" class="btn btn-alpher font-14 btn-sm">Learn More</a>
+                                        <p class="card-text font-16 text-dark d-none d-md-block">This is a short description about the course giving the user a short insight about the course before they decide to view and enroll. </p>
+                                        <a href="course-detail.html" class="btn btn-alpher btn-sm btn-block">Learn More</a>
                                     </div>
                                 </div>
                             </div>
@@ -446,7 +460,7 @@
                 <div class="row p-5">
                     <div class="col-md-6 col-lg-4">
                         <div class="card mb-3 border-0">
-                            <img src="images/course_entre.jpeg" class="card-img-top" alt="Course Image">
+                            <img src="images/alpher-course-2.png" class="card-img-top" alt="Course Image">
                             <div class="card-body text-left">
                                 <p class="card-text d-flex mb-0">
                                     <small class="text-alpher font-14 text-uppercase">Business Plans and Models </small>
@@ -464,7 +478,7 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card mb-3 border-0">
-                            <img src="images/course_sale.png" class="card-img-top" alt="Course Image">
+                            <img src="images/alpher-course-3.png" class="card-img-top" alt="Course Image">
                             <div class="card-body text-left">
                                 <p class="card-text d-flex mb-0">
                                     <small class="text-alpher font-14 text-uppercase">Marketing</small>
@@ -482,7 +496,7 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card mb-3 border-0">
-                            <img src="images/course_opr.jpg" class="card-img-top" alt="Course Image">
+                            <img src="images/alpher-course-4.png" class="card-img-top" alt="Course Image">
                             <div class="card-body text-left">
                                 <p class="card-text d-flex mb-0">
                                     <small class="text-alpher font-14 text-uppercase">Financial Management </small>
@@ -522,20 +536,20 @@
                                     <div class="col-md-8 p-0 order-2 order-md-1">
                                         <div class="card-body text-left p-0">
                                             <p class="card-text d-flex">
-                                                <small class="text-alpher font-14 text-uppercase">Business </small>
+                                                <small class="text-alpher font-14 text-uppercase font-weight-500">Career </small>
                                            </p>
-                                            <a href="article-detail.html"><h5 class="card-title font-20">Anyone can sell</h5></a>
-                                            <p class="card-text">
-                                                <small class="text-muted font-12 text-uppercase">Written By Omalola James </small>
+                                            <a href="article-detail.html"><h5 class="card-title font-20">Free Online Classes To Help You Succeed In Your Career</h5></a>
+                                            <p class="card-text my-0">
+                                                <small class="text-muted font-12 text-uppercase">WRITTEN BY OMOLARA OYINKANSOLA </small>
                                             </p>
                                             <p class="card-text">
-                                                <small class="text-muted font-12 text-uppercase">Posted On AUG 10</small>
+                                                <small class="text-muted font-12 text-uppercase">AUG 10</small>
                                             </p>
                                             <a href="article-detail.html" class="btn-link text-uppercase font-14 text-alpher">Read <i class="icon icon-arrow-right"></i></a>
                                         </div>
                                     </div>
                                     <div class="col-md-4 order-1 order-md-2">
-                                        <img src="images/article_online.jpeg" class="card-img" alt="Tobi Obasa" style="object-fit: cover;height: 100%">
+                                        <img src="images/online-class.png" class="card-img" alt="Tobi Obasa" style="object-fit: cover;height: 100%">
                                     </div>
                                 </div>
                             </div>
@@ -547,20 +561,20 @@
                                     <div class="col-md-8 p-0 order-2 order-md-1">
                                         <div class="card-body text-left p-0">
                                             <p class="card-text d-flex">
-                                                <small class="text-alpher font-14 text-uppercase">Business </small>
+                                                <small class="text-alpher font-14 text-uppercase font-weight-500">Fitness </small>
+                                           </p>
+                                            <a href="article-detail.html"><h5 class="card-title font-20">A Positive And Productive Quarantine Morning Routine</h5></a>
+                                            <p class="card-text my-0">
+                                                <small class="text-muted font-12 text-uppercase">WRITTEN BY OMOLARA OYINKANSOLA </small>
                                             </p>
-                                            <a href="article-detail.html"><h5 class="card-title font-20">Anyone can sell</h5></a>
                                             <p class="card-text">
-                                                <small class="text-muted font-12 text-uppercase">Written By Omalola James </small>
-                                            </p>
-                                            <p class="card-text">
-                                                <small class="text-muted font-12 text-uppercase">Posted On AUG 10</small>
+                                                <small class="text-muted font-12 text-uppercase">AUG 10</small>
                                             </p>
                                             <a href="article-detail.html" class="btn-link text-uppercase font-14 text-alpher">Read <i class="icon icon-arrow-right"></i></a>
                                         </div>
                                     </div>
                                     <div class="col-md-4 order-1 order-md-2">
-                                        <img src="images/article_online.jpeg" class="card-img" alt="Tobi Obasa" style="object-fit: cover;height: 100%">
+                                        <img src="images/fitness.png" class="card-img" alt="Tobi Obasa" style="object-fit: cover;height: 100%">
                                     </div>
                                 </div>
                             </div>
@@ -572,25 +586,24 @@
                                     <div class="col-md-8 p-0 order-2 order-md-1">
                                         <div class="card-body text-left p-0">
                                             <p class="card-text d-flex">
-                                                <small class="text-alpher font-14 text-uppercase">Business </small>
+                                                <small class="text-alpher font-14 text-uppercase font-weight-500">Career </small>
+                                           </p>
+                                            <a href="article-detail.html"><h5 class="card-title font-20">Free Online Classes To Help You Succeed In Your Career</h5></a>
+                                            <p class="card-text my-0">
+                                                <small class="text-muted font-12 text-uppercase">WRITTEN BY OMOLARA OYINKANSOLA </small>
                                             </p>
-                                            <a href="article-detail.html"><h5 class="card-title font-20">Anyone can sell</h5></a>
                                             <p class="card-text">
-                                                <small class="text-muted font-12 text-uppercase">Written By Omalola James </small>
-                                            </p>
-                                            <p class="card-text">
-                                                <small class="text-muted font-12 text-uppercase">Posted On AUG 10</small>
+                                                <small class="text-muted font-12 text-uppercase">AUG 10</small>
                                             </p>
                                             <a href="article-detail.html" class="btn-link text-uppercase font-14 text-alpher">Read <i class="icon icon-arrow-right"></i></a>
                                         </div>
                                     </div>
                                     <div class="col-md-4 order-1 order-md-2">
-                                        <img src="images/article_online.jpeg" class="card-img" alt="Tobi Obasa" style="object-fit: cover;height: 100%">
+                                        <img src="images/online-class-2.png" class="card-img" alt="Tobi Obasa" style="object-fit: cover;height: 100%">
                                     </div>
                                 </div>
                             </div>
-                        </div>  
-
+                        </div>
 
                         <div class="text-center mt-4">
                             <a class="btn btn-alpher text-uppercase font-14 w-100" href="articles.html"> See all articles</a>
@@ -677,7 +690,7 @@
         <section class="ts-intro-outcome py-5 bg-dark">
             <div class="container">
                 <div class="row py-5">
-                    <div class="col-lg-8 mx-auto">
+                    <div class="col-lg-12 mx-auto">
                         <h1 class="text-center font-weight-400 text-alpher">
                             Video content you crave
                         </h1>
@@ -689,7 +702,7 @@
                     <div class="col-lg-7 mb-4">
                         <a href="video-detail.html">
                             <div class="video-sec text-white position-relative bg-dark">
-                                <img src="https://baselinecf.com.au/wp-content/uploads/2016/03/storage-slider-700x500-700x500.jpg" class="w-100" style="opacity: .5">
+                                <img src="images/video-bnnr-1.png" class="w-100" style="opacity: .5">
                                 <div class="video-content position-absolute px-4" style="bottom: 10%">
                                     <div class="font-20">This is the title of the video content you're about to watch</div>
                                     <div class="d-flex justify-content-between mt-3">
@@ -703,7 +716,7 @@
                     </div>
                     <div class="col-lg-5">
                         <a href="video-detail.html" class="d-flex mb-4">
-                            <div class="px-3"><img src="images/inlaks.jpeg" style="width: 120px"></div>
+                            <div class="px-3"><img src="images/video-bnnr-small-1.png" style="width: 100px"></div>
                             <div class="px-2">
                                 <div class="text-uppercase text-alpher mb-2">Webinar</div>
                                 <div class="text-white">This is the title of the video content you're about to watch</div>
@@ -711,7 +724,7 @@
                         </a>
 
                         <a href="video-detail.html" class="d-flex mb-4">
-                            <div class="px-3"><img src="images/inlaks.jpeg" style="width: 120px"></div>
+                            <div class="px-3"><img src="images/video-bnnr-small-2.png" style="width: 100px"></div>
                             <div class="px-2">
                                 <div class="text-uppercase text-alpher mb-2">Panel</div>
                                 <div class="text-white">This is the title of the video content you're about to watch</div>
@@ -719,7 +732,7 @@
                         </a>
 
                         <a href="video-detail.html" class="d-flex mb-4">
-                            <div class="px-3"><img src="images/inlaks.jpeg" style="width: 120px"></div>
+                            <div class="px-3"><img src="images/video-bnnr-small-3.png" style="width: 100px"></div>
                             <div class="px-2">
                                 <div class="text-uppercase text-alpher mb-2">Talk</div>
                                 <div class="text-white">This is the title of the video content you're about to watch</div>
@@ -869,6 +882,170 @@
             <div class="BackTo">
                 <a href="#" class="fa fa-angle-up" aria-hidden="true"></a>
             </div>
+
+            <!-- Get Started Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body p-0">
+                            <div class="container">
+                                <div class="row justify-content-center row-register">
+                                    <div class="col-lg-7 px-5 py-1 align-self-center p-5">
+                                        <h2 class="font-weight-400 text-alpher mb-4">
+                                            Let's get you started for free
+                                        </h2>
+                                        <form action="" method="post">
+                                            <div class="error-container"></div>
+                                            <div class="row first">
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <input class="form-control form-control-name font-14 fill fname" placeholder="First Name" name="name" id="f-name" type="text" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <input class="form-control form-control-name font-14 fill sname" placeholder="Surname" name="name" id="l-name" type="text" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <input class="form-control form-control-name font-14 fill email" placeholder="Email address" name="subject" id="subject" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <input type="tel" class="form-control form-control-name font-14 fill phone" placeholder="Phone Number" name="subject" id="subject" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row second" style="display: none;">
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <select class="form-control select2 fill" name="gender" id="gender" id="" required>
+                                                              <option value="" selected="selected" > Select Gender </option>
+                                                            <option value="">Male</option>
+                                                            <option value="">Female</option>
+                                                            <option value="">I prefer not to say</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <input class="form-control form-control-name fill font-14 date" placeholder="Date of Birth" name="dateofbirth" id="datepicker" type="text" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <select name="state" id="state" class="form-control select2" required>
+                                                              <option value="" selected="selected" > Select State </option>
+                                                              <option value='Abia'>Abia</option>
+                                                              <option value='Adamawa'>Adamawa</option>
+                                                              <option value='AkwaIbom'>AkwaIbom</option>
+                                                              <option value='Anambra'>Anambra</option>
+                                                              <option value='Bauchi'>Bauchi</option>
+                                                              <option value='Bayelsa'>Bayelsa</option>
+                                                              <option value='Benue'>Benue</option>
+                                                              <option value='Borno'>Borno</option>
+                                                              <option value='Cross River'>Cross River</option>
+                                                              <option value='Delta'>Delta</option>
+                                                              <option value='Ebonyi'>Ebonyi</option>
+                                                              <option value='Edo'>Edo</option>
+                                                              <option value='Ekiti'>Ekiti</option>
+                                                              <option value='Enugu'>Enugu</option>
+                                                              <option value='FCT'>FCT</option>
+                                                              <option value='Gombe'>Gombe</option>
+                                                              <option value='Imo'>Imo</option>
+                                                              <option value='Jigawa'>Jigawa</option>
+                                                              <option value='Kaduna'>Kaduna</option>
+                                                              <option value='Kano'>Kano</option>
+                                                              <option value='Katsina'>Katsina</option>
+                                                              <option value='Kebbi'>Kebbi</option>
+                                                              <option value='Kogi'>Kogi</option>
+                                                              <option value='Kwara'>Kwara</option>
+                                                              <option value='Lagos'>Lagos</option>
+                                                              <option value='Nasarawa'>Nasarawa</option>
+                                                              <option value='Niger'>Niger</option>
+                                                              <option value='Ogun'>Ogun</option>
+                                                              <option value='Ondo'>Ondo</option>
+                                                              <option value='Osun'>Osun</option>
+                                                              <option value='Oyo'>Oyo</option>
+                                                              <option value='Plateau'>Plateau</option>
+                                                              <option value='Rivers'>Rivers</option>
+                                                              <option value='Sokoto'>Sokoto</option>
+                                                              <option value='Taraba'>Taraba</option>
+                                                              <option value='Yobe'>Yobe</option>
+                                                              <option value='Zamfara'>Zamafara</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <select class="form-control select2" name="religion" id="religion" id="" required>
+                                                            <option selected="true" disabled="disabled">Select Religion</option>
+                                                            <option value="chr">Christian</option>
+                                                            <option value="isl">Islam</option>
+                                                            <option value="oth">Others</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <select class="font-14 form-control select2" name="acctype" id="quest">
+                                                            <option selected="true" disabled="disabled">So who are you?</option>
+                                                            <option value="professional">A Professional</option>
+                                                            <option value="business">A Business Owner</option>
+                                                            <option value="others">Others</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <div class="note font-13 text-muted mt-1 mb-4" style="display: none;">By signing up. I agree to alpher's Terms of Service and Privacy Policy</div>
+                                                <button class="btn btn-alpher font-14 continue btn-block cursor-auto" disabled="">Continue</button>
+                                                <button class="btn btn-alpher font-14 submit btn-block" type="submit" style="display: none;">Complete Sign Up</button>
+                                            </div>
+                                            <div class="font-16 mt-4">
+                                                Already a member?<a class="text-alpher activate-login" href="#"> Sign in</a>
+                                            </div>
+                                        </form>
+                                        <!-- Contact form end -->
+                                    </div>
+                                    <div class="col-lg-5 p-0 d-none d-lg-flex">
+                                        <img src="images/register.png" class="w-100">
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center row-login" style="display: none;">
+                                    <div class="col-lg-7 px-5 py-5 align-self-center">
+                                        <h2 class="font-weight-400 text-alpher mb-4">
+                                            Sign in
+                                        </h2>
+                                        <form action="" method="post">
+                                            <div class="error-container"></div>
+                                            <div class="row first">
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <input class="form-control form-control-name font-14 fill email" placeholder="Email address" name="subject" id="subject" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <button class="btn btn-alpher font-14 submit btn-block" type="submit">Sign in</button>
+                                            </div>
+                                            <div class="font-16 mt-4">
+                                                New member?<a class="text-alpher activate-register" href="#"> Get started here</a>
+                                            </div>
+                                        </form>
+                                        <!-- Contact form end -->
+                                    </div>
+                                    <div class="col-lg-5 p-0 d-none d-lg-flex">
+                                        <img src="images/register.png" class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Javascript Files
@@ -895,6 +1072,10 @@
         <!-- Template custom -->
         <script src="js/main.js"></script>
         <script src="js/jquery-modal-video.min.js"></script>
+        <script src="js/register.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+        <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
         <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
         <script>
             $(".js-modal-btn").modalVideo();

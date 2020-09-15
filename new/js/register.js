@@ -18,10 +18,20 @@ $(document).ready(function(){
     })
     
     $('.continue').on('click', function(){
-        
         $(this).hide();
         $('.submit').show();
+        $('.note').show();
         $('.first').hide();
         $('.second').show();
+    })
+
+    $('.activate-login').on('click', function(){
+        $('.row-login').show();
+        $('.row-register').hide();
+    })
+
+    $('.activate-register').on('click', function(){
+        $('.row-login').hide();
+        $('.row-register').show();
     })
 });
