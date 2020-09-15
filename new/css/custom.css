@@ -138,14 +138,18 @@ src: local('Butler Black'), url('fonts/Butler_Black.woff') format('woff');
 
 .font-25 {
     font-size: 25px !important;
+    line-height: 30px;
+
 }
 
 .font-35 {
     font-size: 35px !important;
+    line-height: 39px;
 }
 
 .font-40 {
     font-size: 40px;
+    line-height: 43px;
 }
 
 .font-45 {
@@ -159,6 +163,11 @@ src: local('Butler Black'), url('fonts/Butler_Black.woff') format('woff');
 .font-60 {
     font-size: 60px;
     line-height: 53px;
+}
+
+.font-80 {
+    font-size: 80px;
+    line-height: 83px;
 }
 
 .line-height--14{
@@ -284,6 +293,9 @@ src: local('Butler Black'), url('fonts/Butler_Black.woff') format('woff');
   .owl-carousel.other .owl-stage-outer{
      max-height: 80vh;
   }
+  .owl-carousel.course .owl-stage-outer{
+     max-height: 75vh;
+  }
   .over{
      position: absolute;
     top: 0;
@@ -299,6 +311,9 @@ src: local('Butler Black'), url('fonts/Butler_Black.woff') format('woff');
   }
   .banner-item .banner-content-wrap{
      padding: 14vw;
+  }
+  .owl-carousel.other .banner-item{
+     max-height: 715px!important;
   }
   .single-intro-text:hover{
      transform: scale(1.1);
@@ -773,7 +788,7 @@ a.a-link:hover{
   height: 0;
   width: 0;
 }
-          .checkmark {
+.checkmark {
   position: absolute;
   top: 0;
   left: 0;
@@ -899,22 +914,41 @@ a.a-link:hover{
 .header.header-transparent.nav-border{
   padding: 0
 }
-@media (min-width: 992px) and (max-width: 1212px){
-.header.header-transparent ul.navbar-nav > li > a{
-  line-height: 30px;
+
+@media screen and (min-width: 992px) and (max-width: 1212px){
+  .header.header-transparent ul.navbar-nav > li > a{
+    line-height: 30px;
+  }
 }
 
-@media (min-width: 992px){
-  .login{padding-top: calc(100vh - 35em)!important}
+@media screen and (min-width: 992px){
+  .login{
+    padding-top: calc(100vh - 35em)!important
+  }
 }
 
-@media (max-width: 576px){
+@media screen and (max-width: 992px){
   .owl-carousel.other .owl-stage-outer{
      max-height: 60vh!important;
   }
 }
 
-@media (max-width: 430px){
+@media screen and (max-width: 576px){
+  .owl-carousel.other .owl-stage-outer{
+     max-height: 60vh!important;
+  }
+  .font-24 {
+      font-size: 18px!important;
+  }
+  h1{
+    font-size: 24px
+  }
+  .font-25 {
+      font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 430px){
   .wrap {
     padding: 85px 21px;
   }
