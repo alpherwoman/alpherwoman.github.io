@@ -39,6 +39,10 @@
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/intlTelInput.css">
+
     <!-- Custom styles-->
     <link rel="stylesheet" href="css/custom.css">
 
@@ -75,7 +79,7 @@
                                 <ul class="dropdown-menu" role="menu">
                                       <li><a href="#">Need a loan?</a></li>
                                       <li><a href="#">Grants</a></li>
-                                      <li><a href="#">Promote your business</a></li>
+                                      <li><a href="#" data-toggle="modal" data-target="#promoteModal">Promote your business</a></li>
                                 </ul>
                              </li>
                              <li class="dropdown nav-item">
@@ -110,7 +114,7 @@
                                 </ul>
                              </li>
                              <li class="header-ticket nav-item">
-                                <a class="ticket-btn btn" href="register.html"> Get Started
+                                <a class="ticket-btn btn" href="#" data-toggle="modal" data-target="#exampleModal"> Get Started
                                 </a>
                              </li>
                           </ul>
@@ -249,6 +253,7 @@
         </section>
 
         <div class="footer-area">
+
             <!-- footer start-->
             <footer class="bg-dark">
                 <div class="container">
@@ -309,6 +314,278 @@
             <div class="BackTo">
                 <a href="#" class="fa fa-angle-up" aria-hidden="true"></a>
             </div>
+
+            <!-- Get Started Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body p-0">
+                            <div class="container">
+                                <div class="row justify-content-center row-register">
+                                    <div class="col-lg-7 px-5 py-1 align-self-center p-5">
+                                        <h2 class="font-weight-400 text-alpher mb-4">
+                                            Let's get you started for free
+                                        </h2>
+                                        <form action="" method="post">
+                                            <div class="error-container"></div>
+                                            <div class="row first">
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <input class="form-control form-control-name font-14 fill fname" placeholder="First Name" name="name" id="f-name" type="text" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <input class="form-control form-control-name font-14 fill sname" placeholder="Surname" name="name" id="l-name" type="text" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <input class="form-control form-control-name font-14 fill email" placeholder="Email address" name="subject" id="subject" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <input type="tel" class="form-control form-control-name font-14 fill phone" placeholder="Phone Number" name="subject" id="subject" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row second" style="display: none;">
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <select class="form-control form-control-two select2 fill gender" name="gender" id="gender" id="" required>
+                                                              <option value="" selected="selected" > Select Gender </option>
+                                                            <option>Male</option>
+                                                            <option>Female</option>
+                                                            <option>I prefer not to say</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <input class="form-control form-control-two fill font-14 date" placeholder="Date of Birth" name="dateofbirth" id="datepicker" type="text" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <select name="state" id="state" class="form-control select2 state form-control-two" required>
+                                                              <option value="" selected="selected"> Select State </option>
+                                                              <option>Abia</option>
+                                                              <option>Adamawa</option>
+                                                              <option>AkwaIbom</option>
+                                                              <option>Anambra</option>
+                                                              <option>Bauchi</option>
+                                                              <option>Bayelsa</option>
+                                                              <option>Benue</option>
+                                                              <option>Borno</option>
+                                                              <option>Cross River</option>
+                                                              <option>Delta</option>
+                                                              <option>Ebonyi</option>
+                                                              <option>Edo</option>
+                                                              <option>Ekiti</option>
+                                                              <option>Enugu</option>
+                                                              <option>FCT</option>
+                                                              <option>Gombe</option>
+                                                              <option>Imo</option>
+                                                              <option>Jigawa</option>
+                                                              <option>Kaduna</option>
+                                                              <option>Kano</option>
+                                                              <option>Katsina</option>
+                                                              <option>Kebbi</option>
+                                                              <option>Kogi</option>
+                                                              <option>Kwara</option>
+                                                              <option>Lagos</option>
+                                                              <option>Nasarawa</option>
+                                                              <option>Niger</option>
+                                                              <option>Ogun</option>
+                                                              <option>Ondo</option>
+                                                              <option>Osun</option>
+                                                              <option>Oyo</option>
+                                                              <option>Plateau</option>
+                                                              <option>Rivers</option>
+                                                              <option>Sokoto</option>
+                                                              <option>Taraba</option>
+                                                              <option>Yobe</option>
+                                                              <option>Zamafara</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <select class="form-control form-control-two select2 religion" name="religion" id="religion" id="" required>
+                                                            <option value="" selected="selected">Select Religion</option>
+                                                            <option>Christian</option>
+                                                            <option>Islam</option>
+                                                            <option>Others</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <select class="font-14 form-control form-control-two select2 job" name="acctype" id="quest">
+                                                            <option value="" selected="selected">So who are you?</option>
+                                                            <option>A Professional</option>
+                                                            <option>A Business Owner</option>
+                                                            <option>Others</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <div class="note font-13 text-muted mt-1 mb-4" style="display: none;">By signing up. I agree to alpher's Terms of Service and Privacy Policy</div>
+                                                <button class="btn btn-alpher font-14 continue btn-block cursor-auto" disabled="">Continue</button>
+                                                <button class="btn btn-alpher font-14 submit btn-block" type="submit" style="display: none;" disabled="">Complete Sign Up</button>
+                                            </div>
+                                            <div class="font-16 mt-4">
+                                                Already a member?<a class="text-alpher activate-login cursor-pointer"> Sign in</a>
+                                            </div>
+                                        </form>
+                                        <!-- Contact form end -->
+                                    </div>
+                                    <div class="col-lg-5 p-0 d-none d-lg-flex">
+                                        <img src="images/register.png" class="w-100">
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center row-login" style="display: none;">
+                                    <div class="col-lg-7 px-5 py-5 align-self-center">
+                                        <h2 class="font-weight-400 text-alpher mb-4">
+                                            Sign in
+                                        </h2>
+                                        <form action="" method="post">
+                                            <div class="error-container"></div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <input class="form-control form-control-name font-14 fill email" placeholder="Email address" name="subject" id="subject" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <button class="btn btn-alpher font-14 submit btn-block" type="submit">Sign in</button>
+                                            </div>
+                                            <div class="font-16 mt-4">
+                                                New member?<a class="text-alpher activate-register cursor-pointer"> Get started here</a>
+                                            </div>
+                                        </form>
+                                        <!-- Contact form end -->
+                                    </div>
+                                    <div class="col-lg-5 p-0 d-none d-lg-flex">
+                                        <img src="images/register.png" class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Promote your business Modal -->
+            <div class="modal fade" id="promoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body p-0">
+                            <div class="container">
+                                <div class="row justify-content-center row-register">
+                                    <div class="col-lg-7 px-5 py-1 align-self-center p-5">
+                                        <h2 class="font-weight-400 text-alpher mb-4">
+                                            Promote your business
+                                        </h2>
+                                        <form class="" method="post" action="" enctype="multipart/form-data">
+                                            <div class="first-part">
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12">
+                                                        <label for="first_name" class="text-grey font-12">Business Name</label>
+                                                        <input type="text" class="form-control mb-1 form-control-first fill font-12 bname" id="bname" name="business_name" placeholder="Your Business Name" value="" required="">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12">
+                                                        <label for="email" class="text-grey font-12">Business Email</label>
+                                                        <input type="text" class="form-control mb-1 form-control-first fill font-12 bemail" id="bemail" name="business_email" placeholder="Your Business Email" value="" required="">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12">
+                                                        <label for="gender" class="text-grey font-12">Business Logo/Image</label>
+                                                        <div class="form-group" style="display: inline-flex;width: 100%">
+                                                            <input id="uploadFile" placeholder="Upload Image" disabled="disabled" class="font-12 px-3" style="height: 40px;width: 80%;" required="">
+                                                            <div class="fileUpload">
+                                                                <span>Upload</span>
+                                                                <input id="uploadBtn" type="file" name="image" class="upload blogo" required="" accept="image/*">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12">
+                                                        <label for="mobile_number" class="text-grey font-12">Mobile Number</label>
+                                                        <input id="phone" name="business_phone" type="tel" class="form-control mb-1 form-control-first fill phone font-14 bphone" value="" required="">
+                                                    </div>
+                                                </div>
+
+                                                
+                                            </div>
+
+                                            <div class="second-part" style="display: none;">
+                                                <div class="form-row">
+
+                                                    <div class="form-group col-md-12">
+                                                        <label for="gender" class="text-grey font-12">Service Category</label>
+                                                        <select class="font-14 form-control form-control-second select2 bcat" name="acctype" id="quest">
+                                                            <option value="" selected="selected">Select Category</option>
+                                                            <option>Fashion</option>
+                                                            <option>Catering</option>
+                                                            <option>Design</option>
+                                                            <option>Child Care</option>
+                                                            <option>Media</option>
+                                                            <option>Travel Wings</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12">
+                                                        <label for="gender" class="text-grey font-12">Service Description</label>
+                                                        <textarea class="form-control form-control-second font-12 bdesc" name="business_description" placeholder="Tell us about the service" rows="4" id="media-text" required=""></textarea>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <label for="email" class="text-grey font-12 w-100">Social Media URLs</label>
+
+                                                    <div class="form-group col-md-6">
+                                                      <input type="text" class="form-control mb-1 form-control-second fill font-12 bweb" name="website_url" placeholder="Website URL" value="" required="">
+                                                    </div>
+
+                                                    <div class="form-group col-md-6">
+                                                        <input type="text" class="form-control mb-1 form-control-second fill font-12 binsta" name="insta_url" placeholder="Instagram URL" value="" required="">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="form-row mt-3">
+                                                <div class="col-md-12 text-center">
+                                                    <button type="btn" class="btn btn-alpher btn-block font-12 bcontinue" disabled="">Continue</button>
+                                                    <button type="submit" class="btn btn-alpher btn-block font-12 bsubmit" style="display: none;">Submit</button>
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-5 p-0 d-none d-lg-flex">
+                                        <img src="images/register.png" class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Javascript Files
@@ -334,6 +611,14 @@
 
         <!-- Template custom -->
         <script src="js/main.js"></script>
+        <script src="js/jquery-modal-video.min.js"></script>
+        <script src="js/intlTelInput.js"></script>
+
+        <script src="js/register.js"></script>
+        <script src="js/promote.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+        <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
         <script src="js/jquery-modal-video.min.js"></script>
         <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
         <script>
