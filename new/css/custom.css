@@ -622,6 +622,13 @@ src: local('Butler Black'), url('fonts/Butler_Black.woff') format('woff');
 .slick-next:before {
   color: #009fe3;
   font-weight: 600;
+  opacity: 1
+}
+
+.discounts .slick-prev:before, .discounts .slick-next:before {
+  color: #fff;
+  font-weight: 600;
+  opacity: 1
 }
 
 
@@ -837,7 +844,7 @@ a.a-link:hover{
   top: 20px;
   left: -20px;
   color: #fff;
-  background: #e40a54;
+  background: #EC008C;
   padding: 5px 20px;
 }
 
@@ -945,6 +952,9 @@ a.a-link:hover{
   }
   .font-25 {
       font-size: 20px !important;
+  }
+  .font-35 {
+      font-size: 28px !important;
   }
 }
 
