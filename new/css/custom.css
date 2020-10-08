@@ -174,6 +174,10 @@ src: local('Butler Black'), url('fonts/Butler_Black.woff') format('woff');
     line-height: 14px;
 }
 
+.line-height--18{
+    line-height: 18px;
+}
+
 .font-weight-300{
     font-weight: 300!important;
 }
@@ -227,6 +231,15 @@ src: local('Butler Black'), url('fonts/Butler_Black.woff') format('woff');
 
 .bg-alpher{
   background: #009fe3!important
+}
+
+.bg-alpher-2{
+  background: #13BEFF!important
+}
+
+.bg-alpher-outline{
+  background: #009fe3!important;
+  border: 1px solid #13BEFF;
 }
 
 .bg-pink{
@@ -936,6 +949,56 @@ a.a-link:hover{
     cursor: pointer;
     opacity: 0;
     filter: alpha(opacity=0);
+}
+
+.directory-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.loan-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.btn-directory{
+    background: #ccc;
+    border-radius: 50%;
+    padding: 8px 10px;
+    color: #666;
+    height: auto;
+    display: inline-grid;
+}
+
+.card.first{
+  background: #e1f4fd;
+  border-color: #00adef;
+}
+
+.card.first div{
+  background: #e1f4fd;
+  border-color: #00adef;
+}
+
+.border-10{
+  border-radius: 10px;
+}
+
+.border-50{
+  border-radius: 50%;
+}
+
+
+.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f077";
+    float: right; 
+}
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f078"; 
 }
 
 
