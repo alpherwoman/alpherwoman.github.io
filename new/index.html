@@ -124,6 +124,7 @@
                                     </span> 
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
+                                   <li><a href="#" data-toggle="modal" data-target="#profile">Profile</a></li>
                                    <li><a href="">Logout</a></li>
                                 </ul>
                              </li>
@@ -1080,6 +1081,139 @@
                 </div>
             </div>
 
+            <!-- Profile Modal -->
+            <div class="modal" id="profile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body p-0">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-7 px-5 py-1 align-self-center p-5">
+                                        <h2 class="font-weight-400 text-alpher mb-4">
+                                            User Profile
+                                        </h2>
+                                        <form action="" method="post">
+                                            <div class="error-container"></div>
+                                            <div class="row pfirst">
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <input class="form-control form-control-profile font-14 fill pfname" placeholder="First Name" name="name" id="f-name" type="text" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <input class="form-control form-control-profile font-14 fill psname" placeholder="Surname" name="name" id="l-name" type="text" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <input class="form-control form-control-profile font-14 fill pemail" placeholder="Email address" name="subject" id="subject" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <input type="tel" class="form-control form-control-profile font-14 fill phone pphone" placeholder="Phone Number" name="subject" id="subject" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row psecond" style="display: none;">
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <select class="form-control form-control-profile-two select2 fill pgender" name="pgender" id="pgender" required>
+                                                              <option value="" selected="selected" > Select Gender </option>
+                                                            <option>Male</option>
+                                                            <option>Female</option>
+                                                            <option>I prefer not to say</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-3">
+                                                        <input class="form-control form-control-profile-two fill font-14 date pdate" placeholder="Date of Birth" name="pdateofbirth" id="pdatepicker" type="text" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <select name="state" id="pstate" class="form-control select2 pstate form-control-profile-two" required>
+                                                              <option value="" selected="selected"> Select State </option>
+                                                              <option>Abia</option>
+                                                              <option>Adamawa</option>
+                                                              <option>AkwaIbom</option>
+                                                              <option>Anambra</option>
+                                                              <option>Bauchi</option>
+                                                              <option>Bayelsa</option>
+                                                              <option>Benue</option>
+                                                              <option>Borno</option>
+                                                              <option>Cross River</option>
+                                                              <option>Delta</option>
+                                                              <option>Ebonyi</option>
+                                                              <option>Edo</option>
+                                                              <option>Ekiti</option>
+                                                              <option>Enugu</option>
+                                                              <option>FCT</option>
+                                                              <option>Gombe</option>
+                                                              <option>Imo</option>
+                                                              <option>Jigawa</option>
+                                                              <option>Kaduna</option>
+                                                              <option>Kano</option>
+                                                              <option>Katsina</option>
+                                                              <option>Kebbi</option>
+                                                              <option>Kogi</option>
+                                                              <option>Kwara</option>
+                                                              <option>Lagos</option>
+                                                              <option>Nasarawa</option>
+                                                              <option>Niger</option>
+                                                              <option>Ogun</option>
+                                                              <option>Ondo</option>
+                                                              <option>Osun</option>
+                                                              <option>Oyo</option>
+                                                              <option>Plateau</option>
+                                                              <option>Rivers</option>
+                                                              <option>Sokoto</option>
+                                                              <option>Taraba</option>
+                                                              <option>Yobe</option>
+                                                              <option>Zamafara</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <select class="form-control form-control-profile-two select2 preligion" name="preligion" id="preligion" id="" required>
+                                                            <option value="" selected="selected">Select Religion</option>
+                                                            <option>Christian</option>
+                                                            <option>Islam</option>
+                                                            <option>Others</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-3">
+                                                        <select class="font-14 form-control form-control-profile-two select2 pjob" name="acctype" id="">
+                                                            <option value="" selected="selected">So who are you?</option>
+                                                            <option>A Professional</option>
+                                                            <option>A Business Owner</option>
+                                                            <option>Others</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <button class="btn btn-alpher font-14 pcontinue btn-block cursor-auto" disabled="">Continue</button>
+                                                <button class="btn btn-alpher font-14 psubmit btn-block" type="submit" style="display: none;" disabled="">Update Profile</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-5 p-0 d-none d-lg-flex">
+                                        <img src="images/register.png" class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <!-- Promote your business Modal -->
             <div class="modal" id="promoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
@@ -1216,6 +1350,7 @@
         <script src="js/intlTelInput.js"></script>
 
         <script src="js/register.js"></script>
+        <script src="js/profile.js"></script>
         <script src="js/promote.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
