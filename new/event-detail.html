@@ -297,7 +297,7 @@
                     </div>
                 </div>
                 <div class="text-center mt-5">
-                    <a class="btn btn-alpher text-uppercase font-14" href="courses.html"> Register Now</a>
+                    <button class="btn btn-alpher text-uppercase font-14" data-toggle="modal" data-target="#eventModal"> Register Now</button>
                 </div>
             </div>
         </section>
@@ -386,6 +386,65 @@
 
             <div class="BackTo">
                 <a href="#" class="fa fa-angle-up" aria-hidden="true"></a>
+            </div>
+
+            <!-- Events Modal -->
+            <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top: 0!important;font-size: 16px!important">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6 class="modal-title" id="exampleModalLabel">Event Registration</h6>
+                            <button type="button" class="close font-20" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#" class="user-log-form" style="border: 0;padding: 0">
+                                <div class="row">
+                                    <div class="form-group col-md-12 my-2">
+                                        <input type="text" class="form-control element-block font-14" placeholder="Firstname *" required>
+                                    </div>
+                                    <div class="form-group col-md-12 my-2">
+                                        <input type="text" class="form-control element-block font-14" placeholder="Lastname *" required>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="form-group col-md-12 my-2">
+                                        <input type="email" class="form-control element-block font-14" placeholder="Email address *" required>
+                                    </div>
+                                    <div class="form-group col-md-12 my-2">
+                                        <input id="phone" name="phone" type="tel" class="form-control element-block font-14 phone" required>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mx-auto my-2">
+                                        <select name="sex" id="sex" class="form-control w-100 font-14 select" required>
+                                            <option selected="true" disabled="disabled">Gender</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-md-6 mx-auto my-2">
+                                        <select name="who" id="who" class="form-control w-100 font-14 select" required>
+                                            <option selected="true" disabled="disabled">Who are you?</option>
+                                            <option>A professional</option>
+                                            <option>A business owner</option>
+                                            <option>Others</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="w-100 alert alert-info font-12 my-3">Upon completion of this form, If you are not already member of alpher, an account will be created automatically.</div>
+
+                                <div class="btns-wrap my-3 text-center">
+                                    <button type="submit" class="btn btn-alpher font-14" style="margin: 0 auto;">Register</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Get Started Modal -->
