@@ -178,6 +178,10 @@ src: local('Butler Black'), url('fonts/Butler_Black.woff') format('woff');
     line-height: 18px;
 }
 
+.line-height--25{
+    line-height: 25px;
+}
+
 .font-weight-300{
     font-weight: 300!important;
 }
