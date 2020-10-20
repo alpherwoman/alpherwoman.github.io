@@ -1010,6 +1010,14 @@ a.a-link:hover{
   width: 45vw!important;
 }
 
+.header ul.navbar-nav > li.header-ticket .ticket-btn {
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 11px;
+    background: #00c1c1;
+    margin-left: 15px;
+}
+
 
 @-webkit-keyframes ripple {
     70% {box-shadow: 0 0 0 70px rgba(255, 255, 255, 0);}
