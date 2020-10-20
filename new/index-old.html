@@ -63,19 +63,14 @@
             <div class="container-fluid px-4">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <!-- logo-->
-                    <a class="navbar-brand d-lg-none" href="index.html">
-                      <img src="images/logo.png" alt="edu360-logo" style="width: 120px">
-                    </a>
+                    <a class="navbar-brand" href="index.html">
+                  <img src="images/logo.png" alt="edu360-logo" style="width: 120px">
+               </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown" style="">
-                        <ul class="navbar-nav">
-                            <li class="nav-item mr-2 d-none d-md-flex">
-                                <a class="" href="index.html">
-                                  <img src="images/logo.png" alt="edu360-logo" style="width: 120px">
-                                </a>
-                            </li>
+                  <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
+               </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
                              <li class="nav-item">
                                 <a href="about.html">Why <span style="text-transform: lowercase;font-size: 18px;line-height: 20px">&alpha;</span>lpher ?</a>
                              </li>
@@ -118,16 +113,11 @@
                                    <li><a href="directory.html">Business Directory</a></li>
                                 </ul>
                              </li>
-                             <li class="header-ticket nav-item">
-                                <a class="ticket-btn btn" href="#" data-toggle="modal" data-target="#exampleModal"> Login 
-                                </a>
-                             </li>
-                             <li class="header-ticket nav-item">
+                             <!-- <li class="header-ticket nav-item">
                                 <a class="ticket-btn btn" href="#" data-toggle="modal" data-target="#exampleModal"> Get Started
                                 </a>
-                             </li>
-
-                             <!-- <li class="nav-item dropdown">
+                             </li> -->
+                             <li class="nav-item dropdown">
                                 <a class="nav-link text-white" href="#" id="dropdown-user" role="button" data-toggle="dropdown" aria-expanded="true"> 
                                     <span class="ml-2 h-lg-down dropdown-toggle"> 
                                         <i class="fa fa-user-circle fa-2x"></i> 
@@ -137,7 +127,7 @@
                                    <li><a href="#" data-toggle="modal" data-target="#profile">Profile</a></li>
                                    <li><a href="">Logout</a></li>
                                 </ul>
-                             </li> -->
+                             </li>
                           </ul>
                     </div>
                 </nav>
@@ -162,7 +152,7 @@
                                 <h1 class="banner-title text-alpher" style="text-transform: none;">Welcome to the alpher Hub</h1>
 
                                 <p class="banner-desc py-4 px-0 fw-400 font-24">
-                                    Your one-stop portal for learning and networking with other women
+                                    Your one stop portal for learning and networking with other women
                                 </p>
                                 <!-- Countdown end -->
                                 <div class="banner-btn text-center">
@@ -313,8 +303,9 @@
             <div class="discounts slider">
                 <div>
                     <div class="card border-0">
-                        <div class="post-media p-0 text-white">
-                            <img src="images/Rectangle 10.png" class="w-100">
+                        <div class="post-media post-image-1 p-4 discount-card-1 text-white">
+                            <div class="text-uppercase font-16 mb-3">Up to</div>
+                            <div class="text-uppercase font-60 discount-percent">20%<br>OFF</div>
                         </div>
 
                         <div class="card-body">
@@ -337,8 +328,9 @@
 
                 <div>
                     <div class="card border-0">
-                        <div class="post-media p-0 text-white">
-                            <img src="images/Rectangle 11.png" class="w-100">
+                        <div class="post-media post-image-1 p-4 discount-card-2 text-white">
+                            <div class="text-uppercase font-16 mb-3">Up to</div>
+                            <div class="text-uppercase font-60 discount-percent">15%<br>OFF</div>
                         </div>
 
                         <div class="card-body">
@@ -361,8 +353,9 @@
 
                 <div>
                     <div class="card border-0">
-                        <div class="post-media p-0 text-white">
-                            <img src="images/Rectangle 12.png" class="w-100">
+                        <div class="post-media post-image-1 p-4 discount-card-3 text-white">
+                            <div class="text-uppercase font-16 mb-3">Up to</div>
+                            <div class="text-uppercase font-60 discount-percent">30%<br>OFF</div>
                         </div>
 
                         <div class="card-body">
@@ -385,8 +378,9 @@
 
                 <div>
                     <div class="card border-0">
-                        <div class="post-media p-0 text-white">
-                            <img src="images/Rectangle 13.png" class="w-100">
+                        <div class="post-media post-image-1 p-4 discount-card-4 text-white">
+                            <div class="text-uppercase font-16 mb-3">Up to</div>
+                            <div class="text-uppercase font-60 discount-percent">40%<br>OFF</div>
                         </div>
 
                         <div class="card-body">
@@ -717,12 +711,22 @@
             <div class="container">
                 <div class="row px-2 px-lg-5">
                     <div class="col-lg-7 mb-4">
-                        <iframe class="video-player" style="width: 100%;height: 400px" src="https://www.youtube-nocookie.com/embed/S1yI9QBBXgA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <a href="video-detail.html">
+                            <div class="video-sec text-white position-relative bg-dark">
+                                <img src="images/video-bnnr-1.png" class="w-100" style="opacity: .5">
+                                <div class="video-content position-absolute px-4" style="bottom: 10%">
+                                    <div class="font-20">This is the title of the video content you're about to watch</div>
+                                    <div class="d-flex justify-content-between mt-3">
+                                        <div class="text-uppercase">Panel</div>
+                                        <div class="text-uppercase">200 Views</div>
+                                        <div class="text-uppercase">19 Days Ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-
-
                     <div class="col-lg-5">
-                        <a data-id="3XcoCSMDthg" class="cursor-pointer d-flex mb-4 play-video">
+                        <a href="video-detail.html" class="d-flex mb-4">
                             <div class="px-3"><img src="images/video-bnnr-small-1.png" style="width: 100px"></div>
                             <div class="px-2">
                                 <div class="text-uppercase text-alpher mb-2">Webinar</div>
@@ -730,7 +734,7 @@
                             </div>
                         </a>
 
-                        <a data-id="gDAYAeLs-j4" class="cursor-pointer d-flex mb-4 play-video">
+                        <a href="video-detail.html" class="d-flex mb-4">
                             <div class="px-3"><img src="images/video-bnnr-small-2.png" style="width: 100px"></div>
                             <div class="px-2">
                                 <div class="text-uppercase text-alpher mb-2">Panel</div>
@@ -738,7 +742,7 @@
                             </div>
                         </a>
 
-                        <a data-id="wnCtTgHesLs" class="cursor-pointer d-flex mb-4 play-video">
+                        <a href="video-detail.html" class="d-flex mb-4">
                             <div class="px-3"><img src="images/video-bnnr-small-3.png" style="width: 100px"></div>
                             <div class="px-2">
                                 <div class="text-uppercase text-alpher mb-2">Talk</div>
@@ -1352,12 +1356,6 @@
 
         <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
         <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
-        <script>
-            $('.play-video').on('click', function(){
-                id = $(this).attr('data-id');
-                $('.video-player').attr('src','https://www.youtube-nocookie.com/embed/'+id)
-            })
-        </script>
         <script>
             $(".js-modal-btn").modalVideo();
             $(".js-video-button").modalVideo({
