@@ -1057,6 +1057,13 @@ a.a-link:hover{
   .video-content.videos .fa.fa-play-circle.text-alpher.font-50{
     font-size: 100px;
   }
+  #navbarNavDropdown{
+    display: flex;
+    width: 100%;
+    flex-basis: auto;
+    flex-grow: 0;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 992px){
