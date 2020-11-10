@@ -34,7 +34,7 @@
     $("select#lga").select2();
     $("select#gender").select2();
     $("select#religion").select2();
-    $('#religion').change(function () {
+    $('#preligion').change(function () {
         $('.optional').attr('required',false);
         if($(this).val() == 'oth'){
             $('#other-religion').attr('required',true);
@@ -49,7 +49,7 @@
     $('.bus').hide();
     $('.prof').hide();
     $('.oths').hide();
-    $('#quest').change(function () {
+    $('#who').change(function () {
         $('.optional').attr('required',false);
         if($(this).val() == 'professional'){
             $('.bus').hide();
@@ -80,7 +80,10 @@
             $('#other-occupation').attr('required',true);
         }
     })
-    $('select#quest').select2();
+    $('select#who').select2();
+    $('select#pstate').select2();
+    $('select#pgender').select2();
+    $('select#preligion').select2();
     $('select#quest1').select2();
     $('select#quest2').select2();
     $('select#org-ind').select2();
@@ -100,12 +103,12 @@
     var input1 = document.querySelector(".phone");
     window.intlTelInput(input1, {
       preferredCountries: ['ng'],
-      utilsScript: "js/utils.js",
+      utilsScript: "blog/js/utils.js",
     });
     var input2 = document.querySelector(".phones");
     window.intlTelInput(input2, {
       preferredCountries: ['ng'],
-      utilsScript: "js/utils.js",
+      utilsScript: "blog/js/utils.js",
     });
     // $("#state").change(function() {
     //     var state=$(this).val();
