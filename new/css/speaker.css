@@ -1,0 +1,5 @@
+.post .post-image-1 img{
+	object-fit: cover;
+    height: 210px;
+    object-position: top;
+}
