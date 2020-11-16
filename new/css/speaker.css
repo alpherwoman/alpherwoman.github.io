@@ -3,3 +3,8 @@
     height: 210px;
     object-position: top;
 }
+@media screen and (max-width: 556px){
+	.post .post-image-1 img{
+	    height: 310px;
+	}
+}
