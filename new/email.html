@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+        <meta name="x-apple-disable-message-reformatting"> <!-- Disable auto-scale in iOS 10 Mail entirely -->
+        <title>Coupon</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <style>
+            @page {
+                size: auro;
+                margin: 30mm 30mm 30mm 30mm;
+            }
+            /*@media print and (min-height: 266mm) and (max-height: 288mm) and
+                (min-width: 179mm) and (max-width: 201mm) {
+                .img_port {
+                    height: 267mm !important;
+                }
+            }*/
+            .coupon {
+                border: 3px dashed #bcbcbc;
+                border-radius: 10px;
+                font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 
+                "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+                font-weight: 300;
+            }
+
+            .coupon #head {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                min-height: 56px;
+            }
+
+            .coupon #footer {
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            #title .visible-xs {
+                font-size: 12px;
+            }
+
+            .coupon #title img {
+                font-size: 30px;
+                height: 30px;
+                margin-top: 5px;
+            }
+
+            @media screen and (max-width: 500px) {
+                .coupon #title img {
+                    height: 15px;
+                }
+            }
+
+            .coupon #title span {
+                float: right;
+                margin-top: 5px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            .coupon-img {
+                width: 100%;
+                margin-bottom: 15px;
+                padding: 0;
+                object-fit: cover;
+                height: 250px;
+            }
+
+            .items {
+                margin: 15px 0;
+            }
+
+            .usd, .cents {
+                font-size: 20px;
+            }
+
+            .number {
+                font-size: 30px;
+                font-weight: 700;
+                margin-left: 7px
+            }
+
+            sup {
+                top: -15px;
+            }
+
+            #business-info ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                text-align: center;
+            }
+
+            #business-info ul li { 
+                display: inline;
+                text-align: center;
+            }
+
+            #business-info ul li span {
+                text-decoration: none;
+                padding: .2em 1em;
+            }
+
+            #business-info ul li span i {
+                padding-right: 5px;
+            }
+
+            .disclosure {
+                padding-top: 15px;
+                font-size: 14px;
+                color: #333;
+                text-align: center;
+            }
+
+            .coupon-code {
+                color: #333333;
+                font-size: 11px;
+            }
+
+            .exp {
+                color: #f34235;
+            }
+
+            .print {
+                font-size: 14px;
+                float: right;
+            }
+
+            .offer{
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                margin-top: 20px
+            }
+            .panel-heading, .panel-footer{
+                background: #000;
+                color: #fff;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container" id="coupon-container" style="margin-top: 50px">
+
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="panel panel-dark coupon">
+                      <div class="panel-heading" id="head">
+                        <div class="panel-title" id="title">
+                            <img src="images/logo.png" alt="edu360-logo" style="width: 100px">
+                            <span class="">50% Coupon Code</span>
+                        </div>
+                      </div>
+                      <div class="panel-body pull">
+                        <img src="https://s17026.pcdn.co/wp-content/uploads/sites/9/2016/08/Vouchers.jpg" class="coupon-img img-rounded">
+                        <div class="col-xs-6">
+                            <img src="https://www.thechecker.net/hubfs/images/barcode.png" style="width: 250px">
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="offer">
+                                Code: <span class="number">AWESOME</span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <p class="disclosure">To use this coupon code, present this code to the counter checker</p>
+                        </div>
+                      </div>
+                      <div class="panel-footer" style="display: flex;justify-content: space-between;align-items: center;">
+                        <div class="exp"><b>Expires: Dec 10, 2020</b></div>
+                        <div class="coupon-code">
+                                <button id="print" onclick="printDiv('coupon-container')" class="btn btn-clear text-dark"><i class="fa fa-lg fa-print"></i> Print Coupon</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="editor"></div>
+    </body>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script>
+        function printDiv(divName) {
+             var printContents = document.getElementById(divName).innerHTML;
+             var originalContents = document.body.innerHTML;
+
+             document.body.innerHTML = printContents;
+
+             window.print();
+
+             document.body.innerHTML = originalContents;
+        }
+    </script>
+
+</html>
