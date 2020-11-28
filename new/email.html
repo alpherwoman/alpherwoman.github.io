@@ -14,19 +14,14 @@
                 size: auto;
                 margin: 20mm 20mm 20mm 20mm;
             }
-            /*@media print and (min-height: 266mm) and (max-height: 288mm) and
-                (min-width: 179mm) and (max-width: 201mm) {
-                .img_port {
-                    height: 267mm !important;
-                }
-            }*/
             .coupon {
                 border: 3px dashed #bcbcbc;
                 border-radius: 10px;
                 font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 
                 "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
                 font-weight: 300;
-                width: 500px;
+                width: 80%;
+                margin: 0 auto;
             }
 
              #head {
@@ -58,6 +53,18 @@
                     width: 300px;
                 }
             }
+
+            @media screen and (min-width: 501px) and (max-width: 4000px) {
+                .coupon{
+                    width: 600px;
+                }
+            }
+
+            /*@media screen and (min-width: 1001px) and (max-width: 2000px) {
+                .coupon{
+                    width: 600px;
+                }
+            }*/
 
             .coupon #title span {
                 float: right;
@@ -184,7 +191,7 @@
         <!-- Coupon to be printed -->
         <div class="container d-none" id="coupon-container">
             <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-6">
+                <div class="col-md-12 col-lg-12">
                     <div class="panel panel-dark coupon">
                       <div class="panel-heading py-2 px-3" id="head">
                         <div class="panel-title" id="title">
