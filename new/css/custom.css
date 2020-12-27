@@ -683,6 +683,10 @@ src: local('Butler Black'), url('fonts/Butler_Black.woff') format('woff');
   display:block;
 }
 
+.minh-100{
+  min-height: 100px;
+}
+
 .minh-90{
   min-height: 90px;
   display:block;
@@ -710,7 +714,8 @@ src: local('Butler Black'), url('fonts/Butler_Black.woff') format('woff');
 }
 
 .post-image-1 img{
-  border-radius: 10px 10px 0 0
+  border-radius: 10px 10px 0 0;
+  max-height: 255px;
 }
 
 .position-absolute{
