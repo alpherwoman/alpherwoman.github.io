@@ -718,6 +718,11 @@ src: local('Butler Black'), url('fonts/Butler_Black.woff') format('woff');
   max-height: 255px;
 }
 
+.post-image-2 img{
+  border-radius: 0;
+  max-height: 255px;
+}
+
 .position-absolute{
   position: absolute;
 }
@@ -1050,6 +1055,9 @@ a.a-link:hover{
     opacity: 1;
 }
 
+.padding-100{
+  padding: 100px;
+}
 
 @-webkit-keyframes ripple {
     70% {box-shadow: 0 0 0 70px rgba(255, 255, 255, 0);}
@@ -1080,6 +1088,9 @@ a.a-link:hover{
   .video-sec.videos img{
     width: 45vw!important;
   }
+  .padding-100{
+    padding: 40px;
+  }
 }
 
 @media screen and (min-width: 992px){
@@ -1108,6 +1119,12 @@ a.a-link:hover{
   .owl-carousel.other .owl-stage-outer{
      max-height: 60vh!important;
   }
+  .padding-100{
+    padding: 40px;
+  }
+  .font-20 {
+      font-size: 14px!important;
+  }
   .font-24 {
       font-size: 18px!important;
   }
@@ -1117,11 +1134,14 @@ a.a-link:hover{
   .font-25 {
       font-size: 20px !important;
   }
-  .font-35 {
+  .font-35, .font-60, .font-50 {
       font-size: 28px !important;
   }
   .video-sec.videos img{
     width: 60vw!important;
+  }
+  .post-image-2 img, .post-image-1 img{
+    max-height: 455px;
   }
 }
 
