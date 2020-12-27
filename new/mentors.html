@@ -165,6 +165,10 @@
             color: #fff;
             border: 0
         }
+
+        .minh-120{
+            min-height: 120px;
+        }
     </style>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -293,117 +297,124 @@
             </div>
         </section>
 
-        <section class="ts-intro-outcome py-5">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <a href="#aboutModal" data-toggle="modal" data-target="#aboutModal" class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="post">
-                            <div class="post-media post-image-1">
-                                <img src="images/lara.jpeg" class="w-100" alt="">
-                            </div>
+        <section class="ts-intro-outcome pt-0 pb-5">
 
-                            <div class="post-body">
-                                <div class="entry-header minh-65">
-                                    <h4 class="text-dark font-14 text-uppercase">Omolara Abiola</h4>
-                                    <small class="text-uppercase"> Head alpher<br><br></small>
-                                </div>
-                                <!-- header end -->
+            <div class="container-fluid px-0">
+                <div class="row">
 
-                            </div>
-                            <!-- post-body end -->
-                        </div>
-                        <!-- post end-->
-                    </a>
-
-                    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body p-0">
-                                    <div class="container">
-                                        <div class="row justify-content-center row-register">
-                                            <div class="col-lg-7 px-5 py-1 align-self-center p-5">
-                                                <h2 class="font-weight-400 text-alpher mb-4">
-                                                    Omolara Johnson
-                                                </h2>
-                                                <!-- Contact form end -->
-                                            </div>
-                                            <div class="col-lg-5 p-0 d-none d-lg-flex">
-                                                <img src="images/register.png" class="w-100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div align="center" class="mb-5 w-100" style="border-bottom: 1px solid #ccc;">
+                        <button class="btn btn-default filter-button active" data-filter="all">All Mentors</button>
+                        <button class="btn btn-default filter-button" data-filter="business">Business</button>
+                        <button class="btn btn-default filter-button" data-filter="marketing">Marketing</button>
+                        <button class="btn btn-default filter-button" data-filter="financial">Financial Management</button>
+                        <button class="btn btn-default filter-button" data-filter="career">Career</button>
+                        <button class="btn btn-default filter-button" data-filter="personal">Personal Development</button>
                     </div>
+                </div>
+            </div>
 
-                    <a href="" class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="post">
+            <div class="container">
+                <div class="row">
+                    <a href="#" class="col-sm-6 col-md-4 col-lg-3 openModal filter marketing">
+                        <div class="post mentors-info">
                             <div class="post-media post-image-1">
-                                <img src="images/ade.jpeg" class="w-100" alt="">
+                                <img src="images/lara.jpeg" class="w-100 mentor-image" alt="">
                             </div>
 
                             <div class="post-body">
-                                <div class="entry-header minh-65">
-                                    <h4 class="text-dark font-14 text-uppercase">Adetoun Macgregor</h4>
-                                    <small class="text-uppercase">Experience Manager<br><br></small>
+                                <div class="entry-header minh-120">
+                                    <h4 class="text-dark font-14 text-uppercase mentor-name">Omolara Abiola</h4>
+                                    <small class="text-uppercase text-alpher mentor-role"> Head alpher<br><br></small>
+                                    <span class="d-none mentor-industry">Finance</span>
+                                    <span class="d-none mentor-age">32</span>
+                                    <span class="d-none mentor-location">Abuja, Nigeria</span>
+                                    <span class="d-none mentor-url"><button class="text-alpher border-0 bg-white cursor-pointer" onclick="window.open('http://google.com','_blank')">some url</button></span>
+                                    <span class="d-none mentor-type">Personal</span>
                                 </div>
-                                <!-- header end -->
-
                             </div>
                             <!-- post-body end -->
                         </div>
                         <!-- post end-->
                     </a>
-                    <a href="" class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="post">
+                    <a href="" class="col-sm-6 col-md-4 col-lg-3 openModal filter business">
+                        <div class="post mentors-info">
                             <div class="post-media post-image-1">
-                                <img src="images/debby.jpg" class="w-100" alt="">
+                                <img src="images/ade.jpeg" class="w-100 mentor-image" alt="">
                             </div>
 
                             <div class="post-body">
-                                <div class="entry-header minh-65">
-                                    <h4 class="text-dark font-14 text-uppercase">Deborah Ojengbede</h4>
-                                    <small class="text-uppercase">Business Analyst<br><br></small>
+                                <div class="entry-header minh-120">
+                                    <h4 class="text-dark font-14 text-uppercase mentor-name">Adetoun Macgregor</h4>
+                                    <small class="text-uppercase text-alpher mentor-role"> Experience Manager<br><br></small>
+                                    <span class="d-none mentor-industry">Finance</span>
+                                    <span class="d-none mentor-age">32</span>
+                                    <span class="d-none mentor-location">Abuja, Nigeria</span>
+                                    <span class="d-none mentor-url"><button class="text-alpher border-0 bg-white cursor-pointer" onclick="window.open('http://google.com','_blank')">some url</button></span>
+                                    <span class="d-none mentor-type">Personal</span>
                                 </div>
-                                <!-- header end -->
-
                             </div>
                             <!-- post-body end -->
                         </div>
                         <!-- post end-->
                     </a>
-                    <a href="" class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="post">
+                    <a href="" class="col-sm-6 col-md-4 col-lg-3 openModal filter financial">
+                        <div class="post mentors-info">
                             <div class="post-media post-image-1">
-                                <img src="images/koyin.jpg" class="w-100" alt="">
+                                <img src="images/debby.jpg" class="w-100 mentor-image" alt="">
                             </div>
-
+                                
                             <div class="post-body">
-                                <div class="entry-header minh-65">
-                                    <h4 class="text-dark font-14 text-uppercase">Konyinsola Akinrele</h4>
-                                    <small class="text-uppercase">Content and Community Manager </small>
+                                <div class="entry-header minh-120">
+                                    <h4 class="text-dark font-14 text-uppercase mentor-name">Deborah Ojengbede</h4>
+                                    <small class="text-uppercase text-alpher mentor-role"> Business Analyst<br><br></small>
+                                    <span class="d-none mentor-industry">Finance</span>
+                                    <span class="d-none mentor-age">32</span>
+                                    <span class="d-none mentor-location">Abuja, Nigeria</span>
+                                    <span class="d-none mentor-url"><button class="text-alpher border-0 bg-white cursor-pointer" onclick="window.open('http://google.com','_blank')">some url</button></span>
+                                    <span class="d-none mentor-type">Personal</span>
                                 </div>
-                                <!-- header end -->
-
                             </div>
                             <!-- post-body end -->
                         </div>
                         <!-- post end-->
                     </a>
-                    <a href="" class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="post">
+                    <a href="" class="col-sm-6 col-md-4 col-lg-3 openModal filter career">
+                        <div class="post mentors-info">
                             <div class="post-media post-image-1">
-                                <img src="images/eda.jpg" class="w-100" alt="">
+                                <img src="images/koyin.jpg" class="w-100 mentor-image" alt="">
                             </div>
 
                             <div class="post-body">
-                                <div class="entry-header minh-65">
-                                    <h4 class="text-dark font-14 text-uppercase">Edafetite Usin</h4>
-                                    <small class="text-uppercase">Partnership Manager <br><br></small>
+                                <div class="entry-header minh-120">
+                                    <h4 class="text-dark font-14 text-uppercase mentor-name">Konyinsola Akinrele</h4>
+                                    <small class="text-uppercase text-alpher mentor-role"> Content and Community Manager <br><br></small>
+                                    <span class="d-none mentor-industry">Finance</span>
+                                    <span class="d-none mentor-age">32</span>
+                                    <span class="d-none mentor-location">Abuja, Nigeria</span>
+                                    <span class="d-none mentor-url"><button class="text-alpher border-0 bg-white cursor-pointer" onclick="window.open('http://google.com','_blank')">some url</button></span>
+                                    <span class="d-none mentor-type">Personal</span>
                                 </div>
-                                <!-- header end -->
+                            </div>
+                            <!-- post-body end -->
+                        </div>
+                        <!-- post end-->
+                    </a>
+                    <a href="" class="col-sm-6 col-md-4 col-lg-3 openModal filter personal">
+                        <div class="post mentors-info">
+                            <div class="post-media post-image-1">
+                                <img src="images/eda.jpg" class="w-100 mentor-image" alt="">
+                            </div>
 
+                            <div class="post-body">
+                                <div class="entry-header minh-120">
+                                    <h4 class="text-dark font-14 text-uppercase mentor-name">Edafetite Usin</h4>
+                                    <small class="text-uppercase text-alpher mentor-role"> Partnership Manager<br><br></small>
+                                    <span class="d-none mentor-industry">Finance</span>
+                                    <span class="d-none mentor-age">32</span>
+                                    <span class="d-none mentor-location">Abuja, Nigeria</span>
+                                    <span class="d-none mentor-url"><button class="text-alpher border-0 bg-white cursor-pointer" onclick="window.open('http://google.com','_blank')">some url</button></span>
+                                    <span class="d-none mentor-type">Personal</span>
+                                </div>
                             </div>
                             <!-- post-body end -->
                         </div>
@@ -919,6 +930,36 @@
                     </div>
                 </div>
             </div>
+
+
+            <!-- About Mentor -->
+            <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body p-0">
+                            <div class="container">
+                                <div class="row justify-content-center row-register">
+                                    <div class="col-lg-7 px-5 py-1 align-self-center p-5">
+                                        <h2 class="font-weight-400 text-alpher">
+                                            <span class="modal-name">Omolara Johnson</span>
+                                            <span class="font-14 font-italic d-block font-weight-500 modal-role">Head alpher</span>
+                                        </h2>
+                                        <!-- Contact form end -->
+                                        <p>Industry: <span class="modal-industry"></span></p>
+                                        <p>Age: <span class="modal-age"></span></p>
+                                        <p>Location: <span class="modal-location"></span></p>
+                                        <p>Linkedin: <span class="modal-url"></span> </p>
+                                        <p>Type of mentorship: <span class="modal-type"></span> </p>
+                                    </div>
+                                    <div class="col-lg-5 p-0 d-none d-lg-flex">
+                                        <img src="" class="w-100 modal-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Javascript Files
@@ -958,6 +999,7 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.js" integrity="sha512-VvWznBcyBJK71YKEKDMpZ0pCVxjNuKwApp4zLF3ul+CiflQi6aIJR+aZCP/qWsoFBA28avL5T5HA+RE+zrGQYg==" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+        <script src="js/mentors.js" type="text/javascript"></script>
 
         <script type="text/javascript">
             $(document).ready(function() {
