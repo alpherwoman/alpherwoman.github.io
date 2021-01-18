@@ -323,9 +323,9 @@
                                     <div class="seperator font-16 px-1"><i class="fa fa-angle-right"></i></div>
                                     <div class="bc font-16 px-1"><a class="text-alpher fw-500" href="mentorship.html">Mentorship</a></div>
                                     <div class="seperator font-16 px-1"><i class="fa fa-angle-right"></i></div>
-                                    <div class="bc active font-16 px-1 text-white">Find a mentor</div>
+                                    <div class="bc active font-16 px-1 text-white">Mentorship Application</div>
                                 </div>
-                                <h1 class="banner-title text-alpher font-50 font-weight-500 py-3" style="text-transform: none;">Find a mentor</h1>
+                                <h1 class="banner-title text-alpher font-50 font-weight-500 py-3" style="text-transform: none;">Mentorship Application</h1>
                             </div>
                             <!-- Banner content wrap end -->
                         </div>
@@ -338,19 +338,57 @@
         </section>
 
         <div class="container register-form py-5">
-            <div class="form">
+            <form class="form">
 
                 <div class="form-content">
                     <div class="row">
                         <div class="col-lg-6 mb-2">
+                            <label class="font-weight-500" for="text">Title</label>
+                            <select name="title" id="title" class="form-control font-14 mb-3 title" required>
+                                  <option value='Miss'>Miss</option>
+                                  <option value='Mrs'>Mrs</option>
+                                  <option value='Ms'>Ms.</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6 mb-2">
                             <div class="form-group">
-                            <label class="font-weight-500" for="text">Fullname</label>
-                                <input type="text" class="form-control font-14" value="" placeholder="e.g John Doe" />
+                            <label class="font-weight-500" for="text">First Name</label>
+                                <input type="text" class="form-control font-14" name="mentee-fname" value="" placeholder="e.g John" required />
                             </div>
                         </div>
                         <div class="col-lg-6 mb-2">
-                            <label class="font-weight-500" for="text">Where are you located?</label>
-                            <select name="location" id="location" class="form-control font-14 mb-3 location" required>
+                            <div class="form-group">
+                            <label class="font-weight-500" for="text">Last Name</label>
+                                <input type="text" class="form-control font-14" name="mentee-lname" value="" placeholder="e.g Doe" required />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <div class="form-group">
+                            <label class="font-weight-500" for="text">Phone Number</label>
+                            <input type="tel" class="form-control form-control-name font-14 phone" name="mentee-phone" placeholder="e.g +2347039593447" required />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <div class="form-group">
+                            <label class="font-weight-500" for="text">Email Address</label>
+                                <input type="email" class="form-control font-14" name="mentee-email" value="" placeholder="e.g john@goe.com" required />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <div class="form-group">
+                                <label class="font-weight-500" for="text">Linkedin(optional)</label>
+                                <input type="text" class="form-control font-14" name="mentee-linkedin" value="" placeholder="e.g https://www.linkedin.com/company/union-bank-of-nigeria/" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <div class="form-group">
+                            <label class="font-weight-500" for="text">Date of Birth</label>
+                                <input class="form-control form-control-two fill font-14 date" name="mentee-dob" placeholder="Date of Birth" name="dateofbirth" id="datepicker" type="text" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <label class="font-weight-500" for="text">State of Residence</label>
+                            <select id="location" class="form-control font-14 mb-3 location" name="mentee-state" required>
                                   <option value='Abia'>Abia</option>
                                   <option value='Adamawa'>Adamawa</option>
                                   <option value='AkwaIbom'>AkwaIbom</option>
@@ -392,59 +430,47 @@
                         </div> 
                         <div class="col-lg-6 mb-2">
                             <div class="form-group">
-                                <label class="font-weight-500" for="text">What is your Linkedin URL?</label>
-                                <input type="text" class="form-control font-14" value="" placeholder="e.g https://www.linkedin.com/company/union-bank-of-nigeria/" />
+                                <label class="font-weight-500" for="text">Current Occupation</label>
+                                <input type="text" class="form-control font-14" name="mentee-occupation" value="" placeholder="e.g Technical Writer" required />
                             </div>
                         </div>
                         <div class="col-lg-6 mb-2">
+                            <label class="font-weight-500" for="text">Why do you need a mentor?</label>
+                            <textarea class="form-control border-1 font-14" name="mentee-why"  placeholder="250 characters max" maxlength="250" style="height: 100px;" required></textarea>
+                        </div>
+                        <div class="col-lg-6 mb-2">
                             <div class="form-group">
-                                <label class="font-weight-500" for="text">What is your current job function?</label>
-                                <input type="text" class="form-control font-14" value="" placeholder="e.g Technical Writer" />
+                                <label class="font-weight-500" for="text">What are the 3 top things you want to gain from this mentoring program? (Press enter after each)</label>
+                                <input type="text" data-role="tagsinput"  name="mentee-gain" class="form-control" value="" placeholder="e.g Financial Intelligence" required />
                             </div>
                         </div>
                         <div class="col-lg-6 mb-2">
                             <div class="form-group">
                                 <label class="font-weight-500" for="text">List up to five of your greatest strength? (Press enter after each)</label>
-                                <input type="text" data-role="tagsinput" name="tags" class="form-control" value="" placeholder="e.g Discipline">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-2">
-                            <div class="form-group">
-                                <label class="font-weight-500" for="text">Where would you like to grow your experise?</label>
-                                <input type="text" class="form-control font-14" value="" placeholder="e.g Project Management" />
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-2">
-                            <div class="form-group">
-                                <label class="font-weight-500" for="text">Where would you like to get from this mentorship</label>
-                                <input type="text" class="form-control font-14" value="" placeholder="e.g General Career Advice" />
+                                <input type="text" data-role="tagsinput" name="mentee-strength" class="form-control" value="" placeholder="e.g Discipline" required />
                             </div>
                         </div>
                         <div class="col-lg-6 mb-4">
                             <label class="font-weight-500" for="text">How you prefer to communicate with your mentor?</label>
-                            <select class="communicate-select form-control font-14 mb-3">
-                                <option>In person</option>
-                                <option>Via Video call</option>
-                                <option>Via telephone</option>
-                                <option>Via email</option>
+                            <select class="communicate-select form-control font-14 mb-3" name="mentee-communicate" required>
+                                <option>Physically</option>
+                                <option>Video call</option>
+                                <option>Telephone</option>
+                                <option>Email</option>
                             </select>
                         </div>
                         <div class="col-lg-6 mb-2">
-                            <label class="font-weight-500" for="text">If you had to describe yourself (select all that apply)</label>
-                            <select class="describe-select form-control font-14 mb-3" name="describe[]" multiple="multiple">
-                                <option>Sports nut</option>
-                                <option>Techie</option>
-                                <option>Social butterfly</option>
-                                <option>Foodie</option>
-                            </select>
+                            <label class="font-weight-500" for="text">Describe your ideal mentor</label>
+                            <textarea class="form-control font-14" name="mentee-ideal" placeholder="250 characters max" maxlength="250" style="height: 100px;" rows="6" required></textarea>
                         </div>
                         <div class="col-lg-6 mb-4">
-                            <label class="font-weight-500" for="text">Describe your ideal mentor (select all that apply)</label>
+                            <label class="font-weight-500" for="text">Please select your top 3 prefered mentors from the list below</label>
                             <select class="mentor-select form-control font-14 mb-3 border-0" name="describe[]" multiple="multiple">
-                                <option>Business</option>
-                                <option>Marketing</option>
-                                <option>Career</option>
-                                <option>Personal</option>
+                                <option>No Perference</option>
+                                <option>James Smart - SEO Specialist</option>
+                                <option>Tobi Obasa - Project Management Specialist</option>
+                                <option>Kemi Longe - Hair Stylist</option>
+                                <option>Bukola Saraki - Fashion Stylist</option>
                             </select>
                         </div> 
                         <div class="col-lg-6 mb-4">
@@ -455,14 +481,14 @@
                             </select>
                         </div> 
                         <div class="col-lg-6 mb-2"> 
-                            <label class="font-weight-500" for="text">Upload your CV</label>
+                            <label class="font-weight-500" for="text">CV Upload</label>
                             <div class="form-group">
                                 <div class="input-group">
                                     <input type="text" class="form-control bg-white" readonly>
                                     <div class="input-group-btn">
                                         <span class="fileUpload btn btn-alpher">
                                             <span class="upl font-14" id="upload">Browse</span>
-                                            <input type="file" class="upload up" id="up" onchange="readURL(this);" />
+                                            <input type="file" class="upload up" id="up" />
                                         </span><!-- btn-orange -->
                                     </div><!-- btn -->
                                 </div><!-- group -->
@@ -471,10 +497,10 @@
 
                     </div>
                     <div class="text-center mt-5">
-                        <button type="button" class="btn btn-alpher">Submit</button>
+                        <button type="submit" class="btn btn-alpher">Submit</button>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
 
         <div class="footer-area">
@@ -1025,7 +1051,8 @@
 
         <script type="text/javascript">
             $(document).ready(function() {
-                $(".location").select2()
+                $(".location").select2();
+                $(".title").select2();
                 $(".communicate-select").select2(); 
                 $(".describe-select").select2(); 
                 $(".mentor-select").select2(); 
