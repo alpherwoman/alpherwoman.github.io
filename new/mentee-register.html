@@ -365,7 +365,7 @@
                         <div class="col-lg-6 mb-2">
                             <div class="form-group">
                             <label class="font-weight-500" for="text">Phone Number</label>
-                            <input type="tel" class="form-control form-control-name font-14 phone" name="mentee-phone" placeholder="e.g +2347039593447" required />
+                            <input type="tel" class="form-control form-control-name font-14 phone" name="mentee-phone" required />
                             </div>
                         </div>
                         <div class="col-lg-6 mb-2">
@@ -1057,7 +1057,8 @@
                 $(".describe-select").select2(); 
                 $(".mentor-select").select2(); 
                 $(".bank-select").select2(); 
-            })
+            });
+
             $(document).on('change','.up', function(){
                 var names = [];
                 var length = $(this).get(0).files.length;
