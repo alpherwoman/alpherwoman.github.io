@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    $('.wimbiz-image').hide();
+    $('.alpherhub-image').hide();
+
 	$('.openModal').on('click', function(e){
 		e.preventDefault()
 		info = $(this).find('.mentors-info');
@@ -10,21 +13,21 @@ $(document).ready(function(){
 		$('.modal-location').html(info.find('.mentor-location').html()); 
 		$('.modal-url').html(info.find('.mentor-url').html()); 
 		$('.modal-type').html(info.find('.mentor-type').html()); 
-		console.log(info.find('.mentor-image').attr('src'))
 		$('.modal-image').attr('src', info.find('.mentor-image').attr('src'));
-
+		$('.modal-id').attr('id', info.find('.mentor-id').html());
 		$('#aboutModal').modal('show');
 	})
 
 	$(".filter-button").click(function(){
         var value = $(this).attr('data-filter');
         $(".filter-button").removeClass('active')
-        $(this).addClass('active')
+        $(this).addClass('active');
         
         if(value == "all")
         {
-            //$('.filter').removeClass('hidden');
             $('.filter').show();
+	        $('.wimbiz-image').hide();
+	        $('.alpherhub-image').hide();
         }
         else
         {
