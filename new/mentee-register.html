@@ -43,13 +43,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/intlTelInput.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css" integrity="sha512-xmGTNt20S0t62wHLmQec2DauG9T+owP9e6VU8GigI0anN7OXLip9i7IwEhelasml2osdxX71XcYm6BQunTQeQg==" crossorigin="anonymous" />
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" /> -->
     
 
     <!-- Custom styles-->
     <link rel="stylesheet" href="css/custom.css">
 
-    <style type="text/css">
+    <!-- <style type="text/css">
         .note
         {
             text-align: center;
@@ -209,7 +209,7 @@
             opacity: 0;
             filter: alpha(opacity=0);
         }
-    </style>
+    </style> -->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -343,12 +343,14 @@
                 <div class="form-content">
                     <div class="row">
                         <div class="col-lg-6 mb-2">
-                            <label class="font-weight-500" for="text">Title</label>
-                            <select name="title" id="title" class="form-control font-14 mb-3 title" required>
-                                  <option value='Miss'>Miss</option>
-                                  <option value='Mrs'>Mrs</option>
-                                  <option value='Ms'>Ms.</option>
-                            </select>
+                            <div class="form-group">
+                                <label class="font-weight-500" for="text">Title</label>
+                                <select name="title" id="title" class="form-control font-14 mb-3 title" required>
+                                      <option value='Miss'>Miss</option>
+                                      <option value='Mrs'>Mrs</option>
+                                      <option value='Ms'>Ms.</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="col-lg-6 mb-2">
                             <div class="form-group">
@@ -1062,7 +1064,7 @@
 
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.js" integrity="sha512-VvWznBcyBJK71YKEKDMpZ0pCVxjNuKwApp4zLF3ul+CiflQi6aIJR+aZCP/qWsoFBA28avL5T5HA+RE+zrGQYg==" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script> -->
 
         <script type="text/javascript">
             $(document).ready(function() {
