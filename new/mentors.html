@@ -297,7 +297,7 @@
             <div class="container-fluid px-lg-5">
                 <div class="row no-padding">
                     <div class="col-md-6 px-5 text-center order-lg-2 align-self-center my-3 justify-content-center">
-                        <img src="img/alpher.png" class="w-100" style="max-width:350px">
+                        <img src="img/alpher.png" class="w-100" style="max-width:300px">
                             <div class="center">
                                 <a class="hid btn btn-alpher-outline text-uppercase font-14 mx-lg-4 mt-4 view-mentors" id="alpher-mentors" href="#"> View Mentors</a>
                                 <a href="mentee-register.html" class="btn btn-alpher-outline font-14 mx-lg-2 mt-4">Apply for mentoring</a>
@@ -600,7 +600,7 @@
             <div class="container-fluid px-lg-5">
                 <div class="row no-padding">
                     <div class="col-md-6 px-5 text-center order-lg-2 align-self-center my-3 justify-content-center">
-                        <img src="img/wiscar.png" class="w-100" style="max-width: 450px">
+                        <img src="img/wiscar.png" class="w-100" style="max-width: 350px">
                         <div class="center">
                             <a class="hid btn btn-alpher-outline text-uppercase font-14 mx-lg-4 mt-4 view-mentors" id="wiscar-mentors" href="#"> View Mentors</a>
                             <a href="mentee-register.html" class="btn btn-alpher-outline font-14 mx-lg-2 mt-4">Apply for mentoring</a>
@@ -1421,27 +1421,6 @@
                   ]
                 });
             })
-        </script>
-        <script>
-            $(document).ready(function(){
-                // $("body").delegate(".view-mentors", "click", function(e){
-                    $('.view-mentors').click(function(e){
-                    e.preventDefault();
-                    var id = $(this).attr('id');
-                    
-                    if($(this).hasClass('hid')){
-                        $('.'+id).slideDown();
-                        $(this).removeClass('hid');
-                        $(this).text('Hide Mentors');
-                        console.log('yes');
-                    }
-                    else{
-                        $('.'+id).slideUp();
-                        $(this).addClass('hid');
-                        $(this).text('View Mentors');
-                    }
-                });
-            });
         </script>
 
     </div>

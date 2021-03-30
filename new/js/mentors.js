@@ -36,4 +36,23 @@ $(document).ready(function(){
             
         }
     });
+
+    $('.view-mentors').click(function(e){
+        e.preventDefault();
+        var id = $(this).attr('id');
+        
+        if($(this).hasClass('hid')){
+            $('.'+id).slideDown();
+            $(this).removeClass('hid');
+            $(this).text('Hide Mentors');
+            $('html,body').animate({
+                scrollTop: $(this).offset().top + 10
+            }, 1500);
+        }
+        else{
+            $('.'+id).slideUp();
+            $(this).addClass('hid');
+            $(this).text('View Mentors');
+        }
+    });
 })
