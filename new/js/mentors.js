@@ -45,8 +45,9 @@ $(document).ready(function(){
             $('.'+id).slideDown();
             $(this).removeClass('hid');
             $(this).text('Hide Mentors');
+            console.log
             $('html,body').animate({
-                scrollTop: $(this).offset().top + 10
+                scrollTop: $('.'+id).offset().top - 60
             }, 1500);
         }
         else{
