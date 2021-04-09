@@ -1,9 +1,24 @@
 $(document).ready(function(){
-    $('#datepicker').datepicker();
+    $('#datepicker').datepicker({
+        format: 'yyyy-mm-dd',
+        value: deltaDate(new Date(), 0, 0, -18),
+        maxDate: deltaDate(new Date(), 0, 0, -18)
+    });
     $('.date').removeClass('gj-textbox-md')
     $('.gj-icon').hide();
     $('.select2').select2();
 })
+
+function deltaDate(input, days, months, years) {
+    return new Date(
+      input.getFullYear() + years, 
+      input.getMonth() + months, 
+      Math.min(
+        input.getDate() + days,
+        new Date(input.getFullYear() + years, input.getMonth() + months + 1, 0).getDate()
+      )
+    ).toISOString().split("T")[0];
+}
 
 $(document).ready(function(){
     $(".form-control-name").on('input', function(){
