@@ -23,7 +23,7 @@ function deltaDate(input, days, months, years) {
 $(document).ready(function(){
     $(".form-control-profile").on('input', function(){
         var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-        if ($('.pfname').val() == "" || $('.psname').val() == "" || !$('.pemail').val().match(re) || $('.pphone').val().length == 0 || $('.pphone').val().length >= 15 ){
+        if ($('.pfname').val() == "" || $('.psname').val() == "" || $('.password').val() == "" || !$('.pemail').val().match(re) || $('.pphone').val().length == 0 || $('.pphone').val().length >= 15 ){
             $('.pcontinue').addClass('cursor-auto') 
             $('.pcontinue').attr('disabled',true)  
         }
