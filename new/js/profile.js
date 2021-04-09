@@ -1,7 +1,6 @@
 $(document).ready(function(){
     $('#datepicker').datepicker({
         format: 'yyyy-mm-dd',
-        value: deltaDate(new Date(), 0, 0, -18),
         maxDate: deltaDate(new Date(), 0, 0, -18)
     });
     $('.date').removeClass('gj-textbox-md')
