@@ -6,8 +6,8 @@ $(document).ready(function(){
     $('.date').removeClass('gj-textbox-md')
     $('.gj-icon').hide();
     $('.select2').select2();
-    $(".form-control-name").attr("autocomplete", "off");
-    $(".form-control-two").attr("autocomplete", "off");
+    $(".password").attr("autocomplete", "off");
+    $(".date").attr("autocomplete", "off");
 })
 
 function deltaDate(input, days, months, years) {
