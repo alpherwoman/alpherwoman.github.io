@@ -79,6 +79,7 @@ $(document).ready(function(){
 $(document).ready(function() {
     $("body").on('click', '.toggle-password', function() {
       $(this).toggleClass("fa-eye fa-eye-slash");
+      
       var input = $(this).parent().find('.password');
       if (input.attr("type") === "password") {
         input.attr("type", "text");
