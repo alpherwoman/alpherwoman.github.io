@@ -835,11 +835,13 @@ a.a-link:hover{
   height: 25px;
   width: 25px;
   background-color: #fff;
+  border: 1px solid #ccc;
 }
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-  background-color: #ccc;
+  /*background-color: #ccc;*/
+  cursor: pointer;
 }
 
 /* When the checkbox is checked, add a blue background */
