@@ -402,8 +402,14 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
-                                                    <div class="form-group mb-5">
+                                                    <div class="form-group">
                                                         <input class="form-control form-control-name font-14 fill password" placeholder="Password" name="password" id="password" type="password" required>
+                                                        <span toggle="#password-field" class="fa font-14 fa-fw fa-eye field_icon toggle-password cursor-pointer" style="position: absolute;top: 14px;right: 25px;"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input class="form-control form-control-name font-14 fill password confirm" placeholder="Comfirm Password" name="password" id="password" type="password" required>
                                                         <span toggle="#password-field" class="fa font-14 fa-fw fa-eye field_icon toggle-password cursor-pointer" style="position: absolute;top: 14px;right: 25px;"></span>
                                                     </div>
                                                 </div>
@@ -509,7 +515,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Login Modal -->
             <div class="modal fade" id="login" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">

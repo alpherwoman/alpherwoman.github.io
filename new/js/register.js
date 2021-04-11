@@ -20,9 +20,22 @@ function deltaDate(input, days, months, years) {
 }
 
 $(document).ready(function(){
+    $(".create-password").on('input', function(){
+        if ($('.create-password.password').val() == "" || $('.create-password.password').val() != $('.create-password.confirm').val()){
+            $('.password-submit').addClass('cursor-auto') 
+            $('.password-submit').attr('disabled',true)  
+        }
+        else{
+            $('.password-submit').removeAttr('disabled')
+            $('.password-submit').removeClass('cursor-auto') 
+        }
+    })
+})
+
+$(document).ready(function(){
     $(".form-control-name").on('input', function(){
         var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-        if ($('.fname').val() == "" || $('.sname').val() == "" || $('.password').val() == "" || !$('.email').val().match(re) || $('.phone').val().length == 0 || $('.phone').val().length >= 15 ){
+        if ($('.fname').val() == "" || $('.sname').val() == "" || $('.password').val() == "" || !$('.email').val().match(re) || $('.phone').val().length == 0 || $('.phone').val().length >= 15 || $('.password').val() != $('.confirm').val()){
             $('.continue').addClass('cursor-auto') 
             $('.continue').attr('disabled',true)  
         }
