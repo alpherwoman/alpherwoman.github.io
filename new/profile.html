@@ -239,8 +239,8 @@
                                                 <input class="form-control font-14" type="email" id="email" name="email" placeholder="Your Email Address*" required>
                                             </div>
                                             <div class="col-12 col-md-6 form-group">
-                                                <input class="form-control form-control-name font-14 fill password" placeholder="Password" name="password" id="password" type="password" required>
-                                                <span toggle="#password-field" class="fa font-14 fa-fw fa-eye field_icon toggle-password cursor-pointer" style="position: absolute;top: 14px;right: 25px;"></span>
+                                                <input class="form-control form-control-name font-14 fill pwd" placeholder="Password (Min Length: 4)" name="password" id="password" type="password" required>
+                                                <span toggle="#password-field" class="fa font-14 fa-fw fa-eye field_icon toggle-pwd cursor-pointer" style="position: absolute;top: 14px;right: 25px;"></span>
                                             </div>
                                             <!-- <div class="col-12 col-md-6 form-group">
                                                 <input class="form-control form-control-name font-14 fill password" placeholder="Confirm Password" name="password" id="password" type="password" required>
@@ -624,13 +624,13 @@
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <input class="form-control form-control-name font-14 fill password" placeholder="Password" name="password" id="password" type="password" required>
+                                                        <input class="form-control form-control-name font-14 fill password" placeholder="Password (Min Length: 4)" name="password" id="password" type="password" minlength="4" required>
                                                         <span toggle="#password-field" class="fa font-14 fa-fw fa-eye field_icon toggle-password cursor-pointer" style="position: absolute;top: 14px;right: 25px;"></span>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <input class="form-control form-control-name font-14 fill password confirm" placeholder="Comfirm Password" name="password" id="password" type="password" required>
+                                                        <input class="form-control form-control-name font-14 fill password confirm" placeholder="Comfirm Password (Min Length: 4)" name="password" id="password" type="password" required>
                                                         <span toggle="#password-field" class="fa font-14 fa-fw fa-eye field_icon toggle-password cursor-pointer" style="position: absolute;top: 14px;right: 25px;"></span>
                                                     </div>
                                                 </div>
@@ -720,7 +720,6 @@
                                                 <div class="note font-13 text-muted mt-1 mb-4" style="display: none;">By signing up. I agree to alpher's Terms of Service and Privacy Policy</div>
                                                 <button class="btn btn-alpher font-14 continue btn-block cursor-auto" disabled="">Continue</button>
                                                 <button href="" class="btn btn-alpher font-14 submit btn-block" type="button" onclick="window.location.href=''" style="display: none;" disabled="">Complete Sign Up</button>
-
                                             </div>
                                             <div class="font-16 mt-4">
                                                 Already a member?<a class="text-alpher activate-login cursor-pointer" data-dismiss="modal" data-target="#login" data-toggle="modal"> Sign in</a>
@@ -737,6 +736,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- Login Modal -->
             <div class="modal fade" id="login" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
@@ -936,7 +936,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
         <script src="blog/js/jquery.nice-select.min.js"></script>
         <script src="blog/js/lga.js"></script>
-        <!-- <script src="blog/js/profile.js"></script> -->
         <script src="blog/js/intlTelInput.js"></script>
 
         <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
