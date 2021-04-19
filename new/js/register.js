@@ -37,7 +37,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(".form-control-name").on('input', function(){
         var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-        if ($('.fname').val() == "" || $('.sname').val() == "" || $('.password').val() == "" || $('.password').val().length < 4 || !$('.email').val().match(re) || $('.phone').val().length == 0 || $('.phone').val().length >= 15 || $('.password').val() != $('.confirm').val()){
+        if ($('.fname').val() == "" || $('.sname').val() == "" || $('.password').val() == "" || $('.password').val().length < 4 || !$('.email').val().match(re) || $('.phone').val().length == 0 || $('.phone').val().length >= 15 || $('.phone').val().length < 11 || $('.password').val() != $('.confirm').val()){
             $('.continue').addClass('cursor-auto') 
             $('.continue').attr('disabled',true)  
         }
