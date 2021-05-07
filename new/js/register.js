@@ -31,8 +31,18 @@ var password_regex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-+_])
 var phone_regex = /^\d{11}$/;
 
 $(document).ready(function(){
+    $(".create-password").on('blur', function(){
+        $(this).css({border:'1px solid #ced4da'})
+        if(
+            $(this).val() == "" 
+            || ($(this).hasClass('password') && !$(this).val().match(password_regex)) 
+            || ($(this).hasClass('confirm') && ($('.password').val() != $('.confirm').val()))
+        ){
+            $(this).css({border:'1px solid red'})
+        }
+    })
+
     $(".create-password").on('input', function(){
-        var pass = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-+_]).{8,}$/;
         if (!$('.create-password.password').val().match(password_regex) || $('.create-password.password').val() != $('.create-password.confirm').val()){
             $('.password-submit').addClass('cursor-auto') 
             $('.password-submit').attr('disabled',true)  
@@ -45,6 +55,16 @@ $(document).ready(function(){
 })
 
 $(document).ready(function(){
+    $(".create-password").on('blur', function(){
+        $(this).css({border:'1px solid #ced4da'})
+        if(
+            $(this).val() == "" 
+            || ($(this).hasClass('password') && !$(this).val().match(password_regex)) 
+            || ($(this).hasClass('confirm') && ($('.password').val() != $('.confirm').val()))
+        ){
+            $(this).css({border:'1px solid red'})
+        }
+    })
 
     $(".form-control-name").on('blur', function(){
         $(this).css({border:'1px solid #ced4da'})
@@ -59,6 +79,7 @@ $(document).ready(function(){
             $(this).css({border:'1px solid red'})
         }
     })
+
     $(".form-control-name").on('input', function(){
         if ($('.fname').val() == "" || $('.sname').val() == "" || $('.password').val() == "" || !$('.password').val().match(password_regex) || !$('.email').val().match(email_regex) || !$('.phone').val().match(phone_regex) || $('.password').val() != $('.confirm').val()){
             $('.continue').addClass('cursor-auto') 
