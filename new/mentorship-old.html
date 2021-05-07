@@ -401,24 +401,31 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
-                                                    <div class="form-group mb-3">
+                                                    <div class="form-group mb-2">
                                                         <input type="tel" class="form-control form-control-name font-14 fill phone" placeholder="Phone Number" name="subject" id="subject" required>
+                                                        <span class="font-12 line-height--14">Must contain 11 digits</span>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <input class="form-control form-control-name font-14 fill password" placeholder="Password (Min Length: 4)" name="password" id="password" type="password" required>
+                                                    <div class="form-group mb-2">
+                                                        <input class="form-control form-control-name font-14 fill password" placeholder="Password" name="password" id="password" type="password" required>
                                                         <span toggle="#password-field" class="fa font-14 fa-fw fa-eye field_icon toggle-password cursor-pointer" style="position: absolute;top: 14px;right: 25px;"></span>
+                                                        <span class="font-12 line-height--14">Must include >7 chars, uppercase, lowercase, special chars</span>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <input class="form-control form-control-name font-14 fill password confirm" placeholder="Comfirm Password (Min Length: 4)"  name="password" id="password" type="password" required>
+                                                        <input class="form-control form-control-name font-14 fill password confirm" placeholder="Comfirm Password" name="password" id="password" type="password" data-toggle="tooltip" data-placement="top" 
+                                                        title="Minimum of eight characters, containing at least one uppercase letter, one lowercase letter, one number and one special character" required>
                                                         <span toggle="#password-field" class="fa font-14 fa-fw fa-eye field_icon toggle-password cursor-pointer" style="position: absolute;top: 14px;right: 25px;"></span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row second" style="display: none;">
+                                                <div class="col-md-12 align-items-center d-flex mb-4 back cursor-pointer">
+                                                    <i class="fa fa-chevron-left font-20 mr-2"></i>
+                                                    <span class="font-16">Back</span>
+                                                </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group mb-3">
                                                         <select class="form-control form-control-two select2 fill gender" name="gender" id="gender" id="" required>
@@ -503,7 +510,6 @@
                                                 <div class="note font-13 text-muted mt-1 mb-4" style="display: none;">By signing up. I agree to alpher's Terms of Service and Privacy Policy</div>
                                                 <button class="btn btn-alpher font-14 continue btn-block cursor-auto" disabled="">Continue</button>
                                                 <button href="" class="btn btn-alpher font-14 submit btn-block" type="button" onclick="window.location.href=''" style="display: none;" disabled="">Complete Sign Up</button>
-
                                             </div>
                                             <div class="font-16 mt-4">
                                                 Already a member?<a class="text-alpher activate-login cursor-pointer" data-dismiss="modal" data-target="#login" data-toggle="modal"> Sign in</a>
@@ -520,6 +526,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- Login Modal -->
             <div class="modal fade" id="login" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
@@ -564,6 +571,49 @@
                                             </div>
                                             <div class="font-16 mt-4">
                                                 New member?<a class="text-alpher activate-register cursor-pointer" data-dismiss="modal" data-toggle="modal" data-target="#exampleModal"> Get started here</a>
+                                            </div>
+                                        </form>
+                                        <!-- Contact form end -->
+                                    </div>
+                                    <div class="col-lg-5 p-0 d-none d-lg-flex">
+                                        <img src="images/register.png" class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Create Password Modal -->
+            <div class="modal fade" id="create-password" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body p-0">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-7 px-5 py-5 align-self-center">
+                                        <h2 class="font-weight-400 text-alpher mb-4">
+                                            Create Password
+                                        </h2>
+                                        <form action="" method="post">
+                                            <div class="error-container"></div>
+                                            <div class="row mb-4">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input class="form-control create-password font-14 fill password" placeholder="Password" name="password" id="password" type="password" required>
+                                                        <span toggle="#password-field" class="fa font-14 fa-fw fa-eye field_icon toggle-password cursor-pointer" style="position: absolute;top: 14px;right: 25px;"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input class="form-control create-password font-14 fill password confirm" placeholder="Comfirm Password"  name="password" id="password" type="password" required>
+                                                        <span toggle="#password-field" class="fa font-14 fa-fw fa-eye field_icon toggle-password cursor-pointer" style="position: absolute;top: 14px;right: 25px;"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <button class="btn btn-alpher font-14 submit btn-block password-submit" onclick="window.location.href=''" type="button" disabled="">Submit</button>
                                             </div>
                                         </form>
                                         <!-- Contact form end -->
