@@ -26,10 +26,14 @@ function deltaDate(input, days, months, years) {
     ).toISOString().split("T")[0];
 }
 
+var email_regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+var password_regex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-+_]).{8,}$/;
+var phone_regex = /^\d{11}$/;
+
 $(document).ready(function(){
     $(".create-password").on('input', function(){
         var pass = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-+_]).{8,}$/;
-        if (!$('.create-password.password').val().match(pass) || $('.create-password.password').val() != $('.create-password.confirm').val()){
+        if (!$('.create-password.password').val().match(password_regex) || $('.create-password.password').val() != $('.create-password.confirm').val()){
             $('.password-submit').addClass('cursor-auto') 
             $('.password-submit').attr('disabled',true)  
         }
@@ -41,11 +45,22 @@ $(document).ready(function(){
 })
 
 $(document).ready(function(){
+
+    $(".form-control-name").on('blur', function(){
+        $(this).css({border:'1px solid #ced4da'})
+        if(
+            $(this).val() == "" 
+            || ($(this).hasClass('phone') && !$(this).val().match(phone_regex)) 
+            || ($(this).hasClass('email') && !$(this).val().match(email_regex)) 
+            || ($(this).hasClass('phone') && !$(this).val().match(phone_regex)) 
+            || ($(this).hasClass('password') && !$(this).val().match(password_regex)) 
+            || ($(this).hasClass('confirm') && ($('.password').val() != $('.confirm').val()))
+        ){
+            $(this).css({border:'1px solid red'})
+        }
+    })
     $(".form-control-name").on('input', function(){
-        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        var phn = /^\d{11}$/;
-        var pass = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-+_]).{8,}$/;
-        if ($('.fname').val() == "" || $('.sname').val() == "" || $('.password').val() == "" || !$('.password').val().match(pass) || !$('.email').val().match(re) || !$('.phone').val().match(phn) || $('.password').val() != $('.confirm').val()){
+        if ($('.fname').val() == "" || $('.sname').val() == "" || $('.password').val() == "" || !$('.password').val().match(password_regex) || !$('.email').val().match(email_regex) || !$('.phone').val().match(phone_regex) || $('.password').val() != $('.confirm').val()){
             $('.continue').addClass('cursor-auto') 
             $('.continue').attr('disabled',true)  
         }
@@ -98,7 +113,7 @@ $(document).ready(function(){
 // $(document).ready(function(){
 //     $(".form-control-profile").on('input', function(){
 //         var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-//         if ($('.pfname').val() == "" || $('.psname').val() == "" || $('.password').val() == "" || $('.password').val().length < 4 || !$('.pemail').val().match(re) || $('.pphone').val().length == 0 || $('.pphone').val().length >= 15 ){
+//         if ($('.pfname').val() == "" || $('.psname').val() == "" || $('.password').val() == "" || $('.password').val().length < 4 || !$('.pemail').val().match(email_regex) || $('.pphone').val().length == 0 || $('.pphone').val().length >= 15 ){
 //             $('.pcontinue').addClass('cursor-auto') 
 //             $('.pcontinue').attr('disabled',true)  
 //         }
