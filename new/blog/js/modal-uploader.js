@@ -104,9 +104,6 @@ if ($('.modal-uploader').length) {
         im = showPostImg();
     // }
 
-
-        console.log($(".card-content"));
-        // $(".card-content").prepend(`jkhj`)
         $(".card-content").prepend(
             `<div class="card--dashboard my-3" style="display: block">
                 <div class="row">
@@ -124,7 +121,7 @@ if ($('.modal-uploader').length) {
                         </div>
 
                         <div class="px-4">
-                            <p class="font-14 font-weight-light">`+$('#media-text').val().replace(/\n/g, '<br />')+`</p>
+                            <p class="font-14 font-weight-light">`+$('#media-texts').val().replace(/\n/g, '<br />')+`</p>
                         </div>
 
                         <div class="row">
