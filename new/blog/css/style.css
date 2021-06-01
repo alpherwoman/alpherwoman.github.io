@@ -870,20 +870,6 @@ a[data-toggle="collapse"] {
     background: #1451cc7a;
 }
 
-.dropdown-toggle::after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-
-ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    /*  background: #14c660;*/
-}
-
 .navbar-nav .dropdown-menu {
     position: absolute !important;
     float: none;
@@ -1617,15 +1603,6 @@ MEDIAQUERIES
         text-align: center;
         margin-left: -80px !important;
         /*height: auto;*/
-    }
-
-    .dropdown-toggle::after {
-        top: auto;
-        bottom: 10px;
-        right: 50%;
-        -webkit-transform: translateX(50%);
-        -ms-transform: translateX(50%);
-        transform: translateX(50%);
     }
 
     #sidebar.active {

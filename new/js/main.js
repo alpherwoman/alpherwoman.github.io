@@ -44,13 +44,13 @@ jQuery(function ($) {
                      Menu Toggle 
    ------------------------------------------------ */
 
-   if ($(window).width() < 991) {
-      $(".navbar-nav li a").on("click", function () {
-         $(this).parent("li").find(".dropdown-menu").slideToggle();
-         $(this).find("i").toggleClass("fa-angle-up fa-angle-down");
-      });
+   // if ($(window).width() < 991) {
+   //    $(".navbar-nav li a").on("click", function () {
+   //       $(this).parent("li").find(".dropdown-menu").slideToggle();
+   //       $(this).find("i").toggleClass("fa-angle-up fa-angle-down");
+   //    });
 
-   }
+   // }
 
 
    /* ----------------------------------------------------------- */
