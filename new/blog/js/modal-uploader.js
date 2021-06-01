@@ -78,7 +78,6 @@ if ($('.modal-uploader').length) {
         var up_file = modalUploader.files
         var time = gettime();
         var since = timeSince(time);
-
         var im = '';
         var result = '';
 
@@ -106,8 +105,10 @@ if ($('.modal-uploader').length) {
     // }
 
 
+        console.log($(".card-content"));
+        // $(".card-content").prepend(`jkhj`)
         $(".card-content").prepend(
-            `<div class="card--dashboard my-3" style="display: block
+            `<div class="card--dashboard my-3" style="display: block">
                 <div class="row">
                     <div class="col-md-12 my-2 pt-2">
                         <div class="px-4 row">
@@ -156,12 +157,6 @@ if ($('.modal-uploader').length) {
                                 <a class="share_link font-weight-500 d-flex align-items-center cursor">
                                     <span><i class="font-20 mr-1 fa fa-share"></i></span>
                                     <span class="font-14">Share</span>
-                                </a>
-                            </div>
-                            <div class="share text-left mr-4 d-flex align-items-center">
-                                <a class="font-weight-500 d-flex align-items-center cursor">
-                                    <span><i class="font-20 mr-1 fa fa-paper-plane"></i></span>
-                                    <span class="font-14">Send</span>
                                 </a>
                             </div>
                         </div>
