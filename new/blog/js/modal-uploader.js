@@ -33,8 +33,9 @@ if ($('.modal-uploader').length) {
     });
 
     // Global User Info from Database
-    img = 'images/course_img.png' // Will be a global value
-    name = 'James Smart'; // Will be a global value
+    let img = 'images/course_img.png' // Will be a global value
+    let name = 'James Smart'; // Will be a global value
+    let job = 'Data Analyst at Lidl';
 
     // Get current time to use as unique id
     function gettime(){
@@ -109,13 +110,18 @@ if ($('.modal-uploader').length) {
                 <div class="row">
                     <div class="col-md-12 my-2 pt-2">
                         <div class="px-4 row">
-                            <div class="col-9 d-flex">
+                            <div class="col-12 d-flex">
                                 <div class="mr-2">
-                                    <img src="images/course_img.png" class="mt-1">
+                                    <img src="`+img+` class="mt-1">
                                 </div>
-                                <div class="info cursor" data-user="1">
-                                    <p class="font-weight-bold mb-0 font-14">`+name+`</p>
-                                    <p class="font-weight-light font-14">`+since+`</p>
+                                <div class="d-flex justify-content-between w-100">
+                                    <div>
+                                        <p class="font-weight-bold mb-0 font-14 pop" data-user='1'>`+name+`</p>
+                                        <p class="font-weight-light font-14">`+job+`</p>
+                                    </div>
+                                    <div>
+                                        <p class="font-weight-light font-14">`+since+`</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
