@@ -599,7 +599,7 @@ src: local('Butler Black'), url('fonts/Butler_Black.woff') format('woff');
 }
 
 .header.header-transparent.nav-border{
-  background: #000
+  background: #8000ff
 }
 
 .header ul.navbar-nav li .dropdown-menu{
